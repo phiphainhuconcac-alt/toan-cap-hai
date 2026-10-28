@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tài liệu, đề thi thử và luyện tập trắc nghiệm Toán THCS (lớp 6, 7, 8, 9) tự soạn, có đáp án và giải thích, học miễn phí.">
+<meta name="robots" content="index, follow">
+<title>Toán THCS – Tài liệu &amp; đề thi thử</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f5fae'/%3E%3Ctext x='32' y='46' font-size='40' text-anchor='middle' fill='%23ffffff' font-family='serif'%3E%CF%80%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#1f5fae">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Toán THCS – Tài liệu &amp; đề thi thử">
+<meta property="og:description" content="Tài liệu, đề thi thử và luyện tập trắc nghiệm Toán lớp 6, 7, 8, 9 tự soạn, có đáp án và giải thích.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Toán THCS","inLanguage":"vi","description":"Tài liệu, đề thi thử và luyện tập trắc nghiệm Toán lớp 6, 7, 8, 9 tự soạn."}</script>
+<script>try{var t=localStorage.getItem("toan_theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<style>
+  :root {
+    --bg: #fbfaf5; --grid: rgba(59,130,196,.12);
+    --card: #fff; --text: #22303f; --muted: #647487;
+    --primary: #1f5fae; --primary-dark: #17467f; --accent: #f4b400; --border: #d9e2ee;
+    --ok: #1f7a52; --bad: #c02f2f; --on-primary: #ffffff;
+    --l6: #1f7a52; --l7: #1d63c8; --l8: #a94f06; --l9: #7340c4;
+    --math-font: "Cambria Math", "STIX Two Math", "Latin Modern Math", Cambria, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141b26; --grid: rgba(120,170,230,.09);
+      --card: #1b2433; --text: #e6edf7; --muted: #94a3b8;
+      --primary: #6aa8f5; --primary-dark: #8dbcf8; --accent: #ffd54a; --border: #2c3a4f;
+      --ok: #4fc58f; --bad: #f07a7a; --on-primary: #0f2238;
+      --l6: #4fc58f; --l7: #6aa8f5; --l8: #f3a25c; --l9: #b393f0;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #141b26; --grid: rgba(120,170,230,.09);
+    --card: #1b2433; --text: #e6edf7; --muted: #94a3b8;
+    --primary: #6aa8f5; --primary-dark: #8dbcf8; --accent: #ffd54a; --border: #2c3a4f;
+    --ok: #4fc58f; --bad: #f07a7a; --on-primary: #0f2238;
+    --l6: #4fc58f; --l7: #6aa8f5; --l8: #f3a25c; --l9: #b393f0;
+  }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  body {
+    margin: 0; color: var(--text); line-height: 1.45; font-size: 15px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg);
+    background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 24px 24px;
+    min-height: 100vh; display: flex; flex-direction: column;
+  }
+
+  header {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+    padding: 12px 20px; color: #fff; border-bottom: 4px solid var(--accent);
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  }
+  .brand { font-family: var(--math-font); font-size: 1.3rem; font-weight: 700; }
+  .brand small { font-weight: 400; font-size: .8rem; opacity: .85; margin-left: 8px; font-family: system-ui, sans-serif; }
+  .authbar { display: flex; gap: 8px; align-items: center; font-size: .85rem; }
+  .abtn {
+    padding: 5px 12px; border-radius: 999px; cursor: pointer; font: inherit; font-size: .82rem; font-weight: 600;
+    border: 2px solid rgba(255,255,255,.7); background: transparent; color: #fff;
+  }
+  .abtn:hover { background: rgba(255,255,255,.18); }
+  .abtn.solid { background: var(--accent); border-color: var(--accent); color: #2b2100; }
+
+  main { width: 100%; max-width: 1040px; margin: 0 auto; padding: 14px 16px 30px; flex: 1; }
+
+  .bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 8px; }
+  .seg { display: flex; border: 2px solid var(--primary); border-radius: 10px; overflow: hidden; }
+  .seg button {
+    padding: 8px 14px; border: none; background: var(--card); color: var(--primary);
+    font: inherit; font-weight: 700; cursor: pointer; white-space: nowrap;
+  }
+  .seg button.active { background: var(--primary); color: var(--on-primary); }
+  input[type=text], input[type=search], input[type=email], input[type=password], input[type=url], select, textarea {
+    padding: 8px 10px; border: 2px solid var(--border); border-radius: 10px;
+    background: var(--card); color: var(--text); font: inherit;
+  }
+  .bar input { flex: 1 1 160px; min-width: 0; }
+  input:focus, select:focus, textarea:focus { outline: none; border-color: var(--primary); }
+
+  .info { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; margin: 4px 2px 10px; font-size: .85rem; color: var(--muted); }
+  .info b { color: var(--primary); }
+  .info a { color: var(--primary); font-weight: 600; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; }
+  .card {
+    --c: var(--primary);
+    background: var(--card); border: 1px solid var(--border); border-left: 5px solid var(--c);
+    border-radius: 5px 12px 12px 5px; padding: 10px 12px;
+    display: flex; flex-direction: column; gap: 5px;
+    transition: transform .12s, box-shadow .12s;
+  }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(20,50,90,.13); }
+  .card.l6 { --c: var(--l6); } .card.l7 { --c: var(--l7); } .card.l8 { --c: var(--l8); } .card.l9 { --c: var(--l9); }
+  .tags { display: flex; gap: 5px; flex-wrap: wrap; }
+  .tag { font-size: .7rem; padding: 1px 8px; border-radius: 999px; font-weight: 700; border: 1.5px solid var(--c); color: var(--c); }
+  .tag.fill { background: var(--c); color: var(--on-primary); }
+  .tag.vip { background: var(--accent); border-color: var(--accent); color: #2b2100; }
+  .card h3 { margin: 0; font-size: .98rem; font-family: var(--math-font); line-height: 1.3; }
+  .card p {
+    margin: 0; color: var(--muted); font-size: .82rem;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .foot { display: flex; justify-content: space-between; align-items: center; gap: 6px; margin-top: auto; padding-top: 6px; border-top: 1px dashed var(--border); font-size: .75rem; color: var(--muted); }
+  .acts { display: flex; gap: 5px; }
+  .btn {
+    display: inline-block; padding: 5px 11px; background: var(--c, var(--primary)); color: var(--on-primary); border: none; cursor: pointer;
+    border-radius: 8px; text-decoration: none; font: inherit; font-weight: 700; font-size: .8rem;
+  }
+  .btn:hover { filter: brightness(1.12); }
+  .btn.sub { background: var(--muted); }
+  .btn.del { background: var(--bad); }
+  .btn.big { padding: 9px 18px; font-size: .92rem; background: var(--primary); }
+  .btn.ok { background: var(--ok); }
+  .empty { grid-column: 1 / -1; text-align: center; color: var(--muted); padding: 28px 0; font-family: var(--math-font); }
+
+  footer { text-align: center; color: var(--muted); font-size: .8rem; padding: 14px; border-top: 1px dashed var(--border); }
+
+  /* Hộp đăng nhập */
+  .overlay { position: fixed; inset: 0; z-index: 50; background: rgba(10,20,40,.55); display: flex; align-items: center; justify-content: center; padding: 16px; }
+  .modal { width: 100%; max-width: 380px; background: var(--card); color: var(--text); border-radius: 16px; padding: 20px; border-top: 5px solid var(--accent); box-shadow: 0 20px 50px rgba(0,0,0,.35); position: relative; }
+  .modal h2 { margin: 0 0 12px; font-family: var(--math-font); font-size: 1.2rem; }
+  .close { position: absolute; top: 8px; right: 12px; background: none; border: none; font-size: 1.5rem; color: var(--muted); cursor: pointer; }
+  .tabs { display: flex; gap: 6px; margin-bottom: 8px; }
+  .tab { flex: 1; padding: 7px; border: 2px solid var(--border); background: var(--card); color: var(--text); border-radius: 10px; cursor: pointer; font: inherit; font-weight: 600; }
+  .tab.active { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
+  .modal label, .admin label { display: block; font-size: .8rem; margin: 8px 0 3px; color: var(--muted); }
+  .modal input { width: 100%; }
+  .submit { width: 100%; margin-top: 12px; padding: 10px; border: none; border-radius: 10px; background: var(--primary); color: var(--on-primary); font: inherit; font-weight: 700; cursor: pointer; }
+  .msg { min-height: 1.1em; margin-top: 8px; font-size: .82rem; color: var(--bad); }
+
+  /* Khu quản lý (chỉ hiện khi mở index.html#admin) */
+  .admin { background: var(--card); border: 2px dashed var(--accent); border-radius: 14px; padding: 14px; margin-bottom: 14px; }
+  .admin h2 { margin: 0 0 4px; font: 700 1.05rem var(--math-font); }
+  .admin .note { margin: 0 0 8px; font-size: .82rem; color: var(--muted); }
+  .admin .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 8px; }
+  .admin input[type=text], .admin input[type=url], .admin select, .admin textarea { width: 100%; }
+  .admin input[type=file] { width: 100%; font: inherit; font-size: .82rem; }
+  .admin textarea { min-height: 54px; resize: vertical; }
+  .chk { display: flex !important; gap: 8px; align-items: center; margin-top: 10px !important; color: var(--text) !important; font-size: .9rem !important; }
+  .chk input { width: auto !important; }
+  .cho { margin: 10px 0 0; padding: 8px 12px; background: var(--bg); border-radius: 10px; font-size: .82rem; }
+  .cho code { background: var(--card); padding: 1px 6px; border-radius: 6px; }
+  .adminbtns { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-top: 10px; }
+  .steps { margin: 8px 0 0; padding-left: 20px; font-size: .82rem; color: var(--muted); }
+
+  /* ===== Trang chính thức: thanh điều hướng, giới thiệu, các mục ===== */
+  html { scroll-behavior: smooth; }
+  [id] { scroll-margin-top: 72px; }
+  main { flex: none; }
+  header { position: sticky; top: 0; z-index: 30; background: linear-gradient(135deg, #17467f, #1f5fae); }
+  .brand { color: #fff; text-decoration: none; }
+  .nav { display: flex; gap: 2px; flex: 1; justify-content: center; flex-wrap: wrap; }
+  .nav a { color: #fff; text-decoration: none; padding: 6px 8px; border-radius: 8px; font-size: .86rem; white-space: nowrap; font-weight: 600; opacity: .92; }
+  .nav a:hover { background: rgba(255,255,255,.16); opacity: 1; }
+  .menuBtn { display: none; background: transparent; border: 2px solid rgba(255,255,255,.7); color: #fff; border-radius: 8px; font-size: 1.1rem; padding: 2px 10px; cursor: pointer; }
+
+  .hero {
+    position: relative; overflow: hidden; text-align: center; color: #fff; padding: 54px 20px 44px;
+    background: radial-gradient(circle at 20% 0%, #2f7de1 0%, transparent 55%), linear-gradient(135deg, #17467f, #1f5fae);
+  }
+  .hero .kicker { margin: 0 0 8px; font-size: .85rem; letter-spacing: .12em; text-transform: uppercase; opacity: .85; }
+  .hero h1 { margin: 0 0 12px; font-family: var(--math-font); font-size: clamp(1.9rem, 5vw, 3rem); line-height: 1.2; }
+  .hero .lead { margin: 0 auto 20px; max-width: 560px; font-size: 1.05rem; opacity: .95; }
+  .cta { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+  .btn-cta { padding: 11px 22px; border-radius: 12px; font-weight: 700; text-decoration: none; background: var(--accent); color: #2b2100; box-shadow: 0 4px 0 rgba(0,0,0,.2); }
+  .btn-cta.alt { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,.8); box-shadow: none; }
+  .btn-cta:hover { filter: brightness(1.08); }
+  .formula { display: inline-block; margin-top: 22px; padding: 7px 16px; border: 2px dashed rgba(255,255,255,.5); border-radius: 12px; font: italic 1rem var(--math-font); }
+  .stats { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 22px; }
+  .stats div { background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.3); border-radius: 12px; padding: 8px 18px; min-width: 110px; }
+  .stats b { display: block; font: 700 1.6rem var(--math-font); }
+  .stats span { font-size: .8rem; opacity: .9; }
+  .sym { position: absolute; font-family: var(--math-font); color: rgba(255,255,255,.13); font-weight: bold; user-select: none; pointer-events: none; animation: troi 9s ease-in-out infinite; }
+  .sym:nth-of-type(1) { top: 10%; left: 6%; font-size: 4rem; }
+  .sym:nth-of-type(2) { top: 62%; left: 12%; font-size: 3rem; animation-delay: -2s; }
+  .sym:nth-of-type(3) { top: 14%; left: 30%; font-size: 2.4rem; animation-delay: -4s; }
+  .sym:nth-of-type(4) { top: 12%; right: 8%; font-size: 4.2rem; animation-delay: -1s; }
+  .sym:nth-of-type(5) { top: 62%; right: 14%; font-size: 3.2rem; animation-delay: -3s; }
+  .sym:nth-of-type(6) { top: 22%; right: 30%; font-size: 2.4rem; animation-delay: -5s; }
+  @keyframes troi { 0%, 100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-12px) rotate(6deg); } }
+  @media (prefers-reduced-motion: reduce) { .sym { animation: none; } html { scroll-behavior: auto; } }
+
+  .block { max-width: 1040px; margin: 0 auto; padding: 34px 16px 0; }
+  .sec-title { margin: 0 0 4px; font: 700 1.45rem var(--math-font); }
+  .sec-title::after { content: ""; display: block; width: 44px; height: 4px; border-radius: 4px; background: var(--accent); margin-top: 6px; }
+  .sec-sub { margin: 8px 0 16px; color: var(--muted); }
+
+  .lop-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
+  .lop-card {
+    --c: var(--primary); position: relative; overflow: hidden; text-align: left; cursor: pointer;
+    background: var(--card); border: 2px solid var(--border); border-top: 6px solid var(--c); border-radius: 14px;
+    padding: 14px 16px; font: inherit; color: var(--text); transition: transform .15s, box-shadow .15s;
+  }
+  .lop-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(20,50,90,.15); }
+  .lop-card.l6 { --c: var(--l6); } .lop-card.l7 { --c: var(--l7); } .lop-card.l8 { --c: var(--l8); } .lop-card.l9 { --c: var(--l9); }
+  .lop-card .so { position: absolute; right: 10px; top: -6px; font: 700 4.6rem var(--math-font); color: var(--c); opacity: .15; line-height: 1; }
+  .lop-card h3 { margin: 0 0 4px; font: 700 1.15rem var(--math-font); color: var(--c); }
+  .lop-card p { margin: 0 0 4px; font-size: .84rem; color: var(--muted); }
+  .lop-card .dem { font-size: .82rem; font-weight: 700; }
+  .lop-card .go { display: inline-block; margin-top: 8px; font-size: .82rem; font-weight: 700; color: var(--c); }
+
+  /* ===== Luyện tập trắc nghiệm ===== */
+  .lt-box { background: var(--card); border: 2px solid var(--border); border-radius: 16px; padding: 18px; max-width: 760px; margin: 10px auto 0; }
+  .lt-box h3 { margin: 0 0 6px; font: 700 1.2rem var(--math-font); }
+  .lt-box h4 { margin: 14px 0 6px; font: 700 1rem var(--math-font); }
+  .lt-box p { margin: 0 0 10px; color: var(--muted); }
+  .lt-box .lt-ph b { color: var(--primary); }
+  .lt-box label { display: inline-flex; gap: 8px; align-items: center; margin: 4px 14px 10px 0; color: var(--text); }
+  .lt-top { display: flex; justify-content: space-between; font-size: .9rem; color: var(--muted); margin-bottom: 6px; }
+  .pg { height: 8px; background: var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 12px; }
+  .pg i { display: block; height: 100%; background: linear-gradient(90deg, var(--primary), var(--accent)); transition: width .3s; }
+  .lt-tags { --c: var(--primary); display: flex; gap: 5px; margin-bottom: 8px; }
+  .lt-tags.l6 { --c: var(--l6); } .lt-tags.l7 { --c: var(--l7); } .lt-tags.l8 { --c: var(--l8); } .lt-tags.l9 { --c: var(--l9); }
+  .lt-q { font: 700 1.2rem var(--math-font); margin: 0 0 12px; line-height: 1.4; }
+  .opts { display: grid; gap: 8px; }
+  .opt {
+    display: flex; gap: 10px; align-items: center; text-align: left; padding: 11px 14px;
+    border: 2px solid var(--border); border-radius: 12px; background: var(--bg); color: var(--text);
+    font: inherit; font-size: 1rem; cursor: pointer; transition: all .12s;
+  }
+  .opt:hover:not(:disabled) { border-color: var(--primary); transform: translateX(3px); }
+  .opt:disabled { cursor: default; }
+  .opt .ltr { flex: none; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; background: var(--card); border: 2px solid var(--border); font-weight: 700; font-size: .85rem; }
+  .opt.ok { border-color: var(--ok); background: rgba(46,158,107,.14); }
+  .opt.ok .ltr { background: var(--ok); border-color: var(--ok); color: var(--on-primary); }
+  .opt.bad { border-color: var(--bad); background: rgba(214,69,69,.12); }
+  .opt.bad .ltr { background: var(--bad); border-color: var(--bad); color: var(--on-primary); }
+  .gt { margin-top: 12px; padding: 10px 14px; border-radius: 12px; font-size: .92rem; background: var(--bg); border-left: 5px solid var(--muted); color: var(--text); }
+  .gt.ok { border-left-color: var(--ok); } .gt.bad { border-left-color: var(--bad); }
+  .lt-acts { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+  .lt-kq { text-align: center; }
+  .lt-kq .gt { text-align: left; }
+  .lt-kq .lt-acts { justify-content: center; }
+  .diem { font: 700 3.2rem var(--math-font); color: var(--primary); line-height: 1.1; }
+  .diem small { font-size: 1.4rem; color: var(--muted); }
+
+  .lop-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0 2px; }
+  .ltab {
+    --c: var(--primary); display: inline-flex; gap: 6px; align-items: center;
+    padding: 7px 16px; border: 2px solid var(--c); border-radius: 999px;
+    background: var(--card); color: var(--c); font: inherit; font-weight: 700; cursor: pointer; transition: all .15s;
+  }
+  .ltab small { font-weight: 600; opacity: .75; font-size: .75rem; }
+  .ltab:hover { transform: translateY(-1px); }
+  .ltab.active { background: var(--c); color: var(--on-primary); }
+  .ltab.zero:not(.active) { opacity: .5; }
+  .ltab.l6 { --c: var(--l6); } .ltab.l7 { --c: var(--l7); } .ltab.l8 { --c: var(--l8); } .ltab.l9 { --c: var(--l9); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .ltab.active { color: #10233b; } }
+  :root[data-theme="dark"] .ltab.active { color: #10233b; }
+
+  .feat-grid, .steps-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+  .feat { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 16px; }
+  .feat .ic { font-size: 1.7rem; }
+  .feat h3 { margin: 6px 0 4px; font: 700 1.02rem var(--math-font); }
+  .feat p { margin: 0; color: var(--muted); font-size: .88rem; }
+  .steps-row { counter-reset: s; }
+  .stp { position: relative; background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 14px 14px 14px 58px; }
+  .stp::before { counter-increment: s; content: counter(s); position: absolute; left: 14px; top: 14px; width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #2b2100; display: grid; place-items: center; font: 700 1.05rem var(--math-font); }
+  .stp h3 { margin: 0 0 3px; font: 700 1rem var(--math-font); }
+  .stp p { margin: 0; color: var(--muted); font-size: .86rem; }
+
+  .about { display: flex; gap: 16px; align-items: center; background: var(--card); border: 1px solid var(--border); border-left: 6px solid var(--accent); border-radius: 14px; padding: 18px; }
+  .avatar { flex: none; width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(135deg, #17467f, #1f5fae); color: #fff; display: grid; place-items: center; font: 700 1.9rem var(--math-font); }
+  .about p { margin: 0 0 6px; }
+  .about p:last-child { margin: 0; color: var(--muted); font-size: .9rem; }
+
+  details.faq { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 10px 14px; margin-bottom: 8px; }
+  details.faq summary { cursor: pointer; font-weight: 700; }
+  details.faq p { margin: 8px 0 2px; color: var(--muted); font-size: .9rem; }
+
+  .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .box { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 16px; }
+  .box h3 { margin: 0 0 8px; font: 700 1.05rem var(--math-font); }
+  .box label { display: block; font-size: .8rem; margin: 8px 0 3px; color: var(--muted); }
+  .box input, .box textarea { width: 100%; }
+  .box textarea { min-height: 90px; resize: vertical; }
+  .box p { margin: 0 0 8px; }
+  .box a { color: var(--primary); font-weight: 600; }
+
+  .site-footer { margin-top: 40px; background: #0f2a4a; color: #cfdcf0; padding: 28px 16px 14px; text-align: left; border-top: none; font-size: .9rem; }
+  .f-grid { max-width: 1040px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 20px; }
+  .site-footer h4 { margin: 0 0 6px; color: #fff; font-family: var(--math-font); font-size: 1.05rem; }
+  .site-footer p { margin: 0; color: #a9bcd8; font-size: .86rem; }
+  .site-footer a { display: block; color: #cfdcf0; text-decoration: none; padding: 2px 0; font-size: .88rem; }
+  .site-footer a:hover { color: #fff; text-decoration: underline; }
+  .copy { max-width: 1040px; margin: 18px auto 0; padding-top: 12px; border-top: 1px solid rgba(255,255,255,.15); font-size: .78rem; color: #a9bcd8; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px; }
+  .topbtn { position: fixed; right: 16px; bottom: 16px; z-index: 40; width: 42px; height: 42px; border-radius: 50%; border: none; background: var(--accent); color: #2b2100; font-size: 1.2rem; font-weight: 700; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,.25); }
+
+  /* ===== Hỗ trợ truy cập & chuyển động ===== */
+  :root { color-scheme: light dark; }
+  :root[data-theme="light"] { color-scheme: light; }
+  :root[data-theme="dark"] { color-scheme: dark; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  header :focus-visible, .hero :focus-visible, .site-footer :focus-visible { outline-color: #fff; }
+  .skip { position: absolute; left: 12px; top: -64px; z-index: 100; padding: 8px 14px; background: var(--accent); color: #2b2100; font-weight: 700; border-radius: 8px; text-decoration: none; }
+  .skip:focus { top: 8px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  .box h2 { margin: 0 0 8px; font: 700 1.05rem var(--math-font); }
+  .box h2 .streak { float: right; font: 700 .82rem system-ui, sans-serif; color: var(--l8); }
+  .lt-q:focus { outline: none; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+    .card:hover, .opt:hover:not(:disabled), .ltab:hover { transform: none; }
+  }
+
+  /* ===== Lưu ❤, thử thách ngày, chế độ luyện tập, tiến độ, công thức ===== */
+  .card { position: relative; }
+  .card .tags { padding-right: 30px; }
+  .heart { position: absolute; top: 6px; right: 6px; width: 30px; height: 30px; border: none; border-radius: 50%; background: transparent; color: var(--muted); font-size: 1.15rem; line-height: 1; cursor: pointer; transition: transform .12s; }
+  .heart:hover { transform: scale(1.18); color: var(--bad); }
+  .heart.on { color: var(--bad); }
+  .ltab.luu { --c: var(--bad); margin-left: auto; }
+
+  .duo { display: grid; grid-template-columns: 1.25fr 1fr; gap: 14px; }
+  .box h3 .streak { float: right; font: 700 .82rem system-ui, sans-serif; color: var(--l8); }
+  .tt-q { font: 700 1.1rem var(--math-font); margin: 6px 0 10px; line-height: 1.4; }
+  .tt-opts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .tt-opts .opt { padding: 8px 10px; font-size: .95rem; }
+  .moi-list { display: grid; gap: 8px; }
+  .moi-item { --c: var(--primary); display: flex; gap: 8px; align-items: center; justify-content: space-between; padding: 8px 10px; border: 1px solid var(--border); border-left: 4px solid var(--c); border-radius: 4px 10px 10px 4px; background: var(--bg); }
+  .moi-item.l6 { --c: var(--l6); } .moi-item.l7 { --c: var(--l7); } .moi-item.l8 { --c: var(--l8); } .moi-item.l9 { --c: var(--l9); }
+  .moi-item b { display: block; font: 700 .92rem var(--math-font); }
+  .moi-item small { color: var(--muted); font-size: .78rem; }
+
+  .btn.big.sub { background: var(--muted); }
+  .box a.btn { color: var(--on-primary); }
+  .lt-top { flex-wrap: wrap; gap: 6px; align-items: center; }
+  .lt-top .right { display: flex; gap: 6px; align-items: center; }
+  .modes { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 8px; margin: 10px 0 12px; }
+  .mode { text-align: left; padding: 10px 12px; border: 2px solid var(--border); border-radius: 12px; background: var(--bg); color: var(--text); font: inherit; cursor: pointer; display: flex; flex-direction: column; gap: 2px; }
+  .mode b { font-size: .95rem; }
+  .mode small { color: var(--muted); font-size: .76rem; }
+  .mode i { font-style: normal; font-size: .78rem; font-weight: 700; color: var(--primary); }
+  .mode.active { border-color: var(--primary); background: var(--card); box-shadow: 0 0 0 3px rgba(31,95,174,.2); }
+  .mode:disabled { opacity: .45; cursor: not-allowed; }
+  .timer { font: 700 1.05rem var(--math-font); color: var(--primary); }
+  .timer.gap { color: var(--bad); animation: nhay 1s infinite; }
+  @keyframes nhay { 50% { opacity: .45; } }
+  .mini { padding: 4px 10px; border: 2px solid var(--border); border-radius: 999px; background: var(--card); color: var(--text); font: inherit; font-size: .8rem; font-weight: 600; cursor: pointer; }
+  .mini.on { border-color: var(--accent); background: var(--accent); color: #2b2100; }
+  .qnav { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 12px; }
+  .qnav button { width: 32px; height: 32px; border: 2px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--text); font: inherit; font-weight: 700; font-size: .85rem; cursor: pointer; }
+  .qnav button.done { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
+  .qnav button.cur { outline: 3px solid var(--accent); outline-offset: 1px; }
+  .opt.sel { border-color: var(--primary); background: rgba(31,95,174,.14); }
+  .opt.sel .ltr { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
+
+  .td { max-width: 820px; margin: 10px auto 0; display: grid; gap: 12px; }
+  .td .box h3 { margin: 0 0 8px; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(125px, 1fr)); gap: 10px; }
+  .tile { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 12px 8px; text-align: center; }
+  .tile b { display: block; font: 700 1.6rem var(--math-font); color: var(--primary); line-height: 1.15; }
+  .tile span { font-size: .78rem; color: var(--muted); }
+  .pbar-row { display: grid; grid-template-columns: 160px 1fr 92px; gap: 8px; align-items: center; margin: 6px 0; font-size: .85rem; }
+  .pbar-row b small { color: var(--muted); font-weight: 400; }
+  .pbar { --c: var(--primary); height: 10px; background: var(--border); border-radius: 10px; overflow: hidden; }
+  .pbar i { display: block; height: 100%; background: var(--c); }
+  .pbar.l6 { --c: var(--l6); } .pbar.l7 { --c: var(--l7); } .pbar.l8 { --c: var(--l8); } .pbar.l9 { --c: var(--l9); }
+  .hist-row { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; padding: 6px 0; border-bottom: 1px dashed var(--border); font-size: .85rem; }
+  .hist-row:last-child { border-bottom: none; }
+  .note-td { margin: 0; font-size: .85rem; color: var(--muted); }
+
+  .ct-h { --c: var(--primary); margin: 16px 0 8px; font: 700 1.05rem var(--math-font); color: var(--c); }
+  .ct-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 10px; }
+  .ct { background: var(--card); border: 1px solid var(--border); border-left: 5px solid var(--c, var(--primary)); border-radius: 4px 12px 12px 4px; padding: 10px 12px; }
+  .ct small { display: block; color: var(--muted); font-size: .78rem; margin-bottom: 3px; }
+  .ct code { display: block; font: 1.02rem/1.5 var(--math-font); white-space: pre-wrap; background: none; padding: 0; color: var(--text); }
+
+  @media (max-width: 1240px) { .brand small { display: none; } }
+  @media (max-width: 820px) { .duo { grid-template-columns: 1fr; } }
+  @media (max-width: 520px) {
+    .seg button { padding: 8px 4px; font-size: .82rem; }
+    .pbar-row { grid-template-columns: 100px 1fr 74px; }
+    .tt-opts { grid-template-columns: 1fr; }
+    .ltab.luu { margin-left: 0; }
+  }
+
+  @media (max-width: 820px) {
+    .menuBtn { display: block; }
+    .nav { display: none; order: 5; flex-basis: 100%; flex-direction: column; padding-bottom: 6px; }
+    .nav.open { display: flex; }
+    .contact, .f-grid { grid-template-columns: 1fr; }
+    .about { flex-direction: column; text-align: center; }
+  }
+  @media (max-width: 520px) {
+    header { padding: 10px 14px; }
+    .brand small { display: none; }
+    .seg { flex: 1 1 100%; } .seg button { flex: 1; }
+    .bar select { flex: 1 1 30%; min-width: 0; }
+    .bar input { flex: 1 1 100%; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#thu-vien">Bỏ qua điều hướng, tới nội dung chính</a>
+<div id="sr" class="sr-only" role="status" aria-live="polite"></div>
+<noscript><p style="padding:20px;text-align:center">Trang này cần bật JavaScript để hiển thị tài liệu, đề thi và phần luyện tập.</p></noscript>
+<header>
+  <a class="brand" href="#trang-chu">📐 Toán THCS<small>Tài liệu &amp; đề thi tự soạn</small></a>
+  <nav class="nav" id="nav" aria-label="Điều hướng chính">
+    <a href="#trang-chu">Trang chủ</a>
+    <a href="#thu-vien">Kho tài liệu</a>
+    <a href="#cong-thuc">Công thức</a>
+    <a href="#vi-sao">Vì sao chọn</a>
+    <a href="#gioi-thieu">Giới thiệu</a>
+    <a href="#hoi-dap">Hỏi đáp</a>
+    <a href="#lien-he">Liên hệ</a>
+  </nav>
+  <button class="abtn" id="themeBtn" type="button" aria-label="Đổi giao diện sáng/tối" title="Đổi giao diện sáng/tối">🌙</button>
+  <div class="authbar" id="authbar"></div>
+  <button class="menuBtn" id="menuBtn" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="nav">☰</button>
+</header>
+
+<section class="hero" id="trang-chu">
+  <span class="sym">π</span><span class="sym">∑</span><span class="sym">√</span>
+  <span class="sym">∞</span><span class="sym">x²</span><span class="sym">∠</span>
+  <p class="kicker">Toán THCS · Lớp 6 – 7 – 8 – 9</p>
+  <h1>Học Toán dễ hơn,<br>ôn thi tự tin hơn</h1>
+  <p class="lead">Kho tài liệu và đề thi thử Toán cấp 2 do mình tự soạn. Có đáp án, xem và tải về miễn phí.</p>
+  <div class="cta">
+    <a class="btn-cta" href="#thu-vien" data-muc="tai-lieu">📚 Xem tài liệu</a>
+    <a class="btn-cta alt" href="#thu-vien" data-muc="de-thi">📝 Làm đề thi thử</a>
+    <a class="btn-cta alt" href="#thu-vien" data-muc="luyen-tap">✍️ Luyện tập</a>
+  </div>
+  <div class="formula">(a + b)² = a² + 2ab + b²</div>
+  <div class="stats">
+    <div><b id="stTL">0</b><span>tài liệu</span></div>
+    <div><b id="stDT">0</b><span>đề thi thử</span></div>
+    <div><b id="stCH">0</b><span>câu luyện tập</span></div>
+    <div><b>4</b><span>khối lớp</span></div>
+  </div>
+</section>
+
+<section class="block" id="hom-nay">
+  <div class="duo">
+    <div class="box" id="thuThach"></div>
+    <div class="box" id="moiDang"></div>
+  </div>
+</section>
+
+<main id="thu-vien">
+  <!-- ===== Khu quản lý cho chủ trang: mở bằng index.html#admin ===== -->
+  <section class="admin" id="adminBox" hidden>
+    <h2>🛠 Khu quản lý (chủ trang)</h2>
+    <p class="note">Thêm tài liệu/đề thi vào danh sách, rồi bấm <b>Tải bản cập nhật</b>. Trang chỉ lưu thay đổi sau khi bạn thay file <code>index.html</code> cũ bằng file mới tải về.</p>
+    <form id="aForm">
+      <div class="row">
+        <div><label for="aLoai">Thêm vào phần</label>
+          <select id="aLoai"><option value="tai-lieu">📚 Tài liệu</option><option value="de-thi">📝 Đề thi thử</option></select></div>
+        <div><label for="aLop">Lớp</label>
+          <select id="aLop"><option>6</option><option>7</option><option>8</option><option>9</option></select></div>
+        <div><label for="aCD" id="aLblCD">Chủ đề</label>
+          <input id="aCD" type="text" list="aDsCD" placeholder="Số học, Đại số…" required>
+          <datalist id="aDsCD"></datalist></div>
+        <div id="aBoxTG" hidden><label for="aTG">Thời gian làm bài</label>
+          <input id="aTG" type="text" placeholder="90 phút"></div>
+      </div>
+      <label for="aTitle">Tiêu đề</label>
+      <input id="aTitle" type="text" required>
+      <label for="aMoTa">Mô tả ngắn</label>
+      <textarea id="aMoTa"></textarea>
+      <div class="row">
+        <div><label for="aFile" id="aLblFile">File tài liệu (PDF, Word…)</label>
+          <input id="aFile" type="file" accept=".pdf,.doc,.docx,.ppt,.pptx,.png,.jpg,.jpeg">
+          <label for="aLink">…hoặc dán link có sẵn</label>
+          <input id="aLink" type="url" placeholder="https://…"></div>
+        <div id="aBoxDA" hidden><label for="aFileDA">File đáp án (nếu có)</label>
+          <input id="aFileDA" type="file" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg">
+          <label for="aLinkDA">…hoặc link đáp án</label>
+          <input id="aLinkDA" type="url" placeholder="https://…"></div>
+      </div>
+      <label class="chk"><input id="aTV" type="checkbox"> ⭐ Chỉ dành cho thành viên</label>
+      <div class="msg" id="aMsg" role="alert"></div>
+      <div class="adminbtns">
+        <button class="btn big" type="submit">＋ Thêm vào danh sách</button>
+        <button class="btn big ok" id="aTai" type="button">⬇ Tải bản cập nhật</button>
+        <span class="note" id="aTomTat" style="margin:0"></span>
+      </div>
+    </form>
+    <hr style="border:none;border-top:1px dashed var(--border);margin:14px 0">
+    <h2 style="font-size:1rem">✍️ Thêm câu hỏi luyện tập</h2>
+    <form id="qForm">
+      <div class="row">
+        <div><label for="qLop">Lớp</label>
+          <select id="qLop"><option>6</option><option>7</option><option>8</option><option>9</option></select></div>
+        <div><label for="qCD">Chủ đề</label>
+          <input id="qCD" type="text" list="qDsCD" placeholder="Số học, Đại số, Hình học…" required>
+          <datalist id="qDsCD"><option value="Số học"><option value="Đại số"><option value="Hình học"></datalist></div>
+        <div><label for="qDung">Đáp án đúng</label>
+          <select id="qDung"><option value="0">A</option><option value="1">B</option><option value="2">C</option><option value="3">D</option></select></div>
+      </div>
+      <label for="qText">Câu hỏi</label>
+      <textarea id="qText" required></textarea>
+      <div class="row">
+        <div><label for="qA">Đáp án A</label><input id="qA" type="text"></div>
+        <div><label for="qB">Đáp án B</label><input id="qB" type="text"></div>
+        <div><label for="qC">Đáp án C</label><input id="qC" type="text"></div>
+        <div><label for="qD">Đáp án D</label><input id="qD" type="text"></div>
+      </div>
+      <label for="qGT">Giải thích (hiện sau khi học sinh trả lời)</label>
+      <textarea id="qGT"></textarea>
+      <div class="msg" id="qMsg" role="alert"></div>
+      <div class="adminbtns"><button class="btn big" type="submit">＋ Thêm câu hỏi</button></div>
+    </form>
+    <details style="margin-top:12px"><summary><b>📥 Nhập nhiều câu hỏi cùng lúc</b></summary>
+      <p class="note">Mỗi dòng là một câu, các phần cách nhau bằng dấu <code>|</code> theo thứ tự: Lớp | Chủ đề | Câu hỏi | A | B | C | D | Đáp án đúng (A, B, C hoặc D) | Giải thích (không bắt buộc)</p>
+      <textarea id="qBulk" aria-label="Danh sách câu hỏi cần nhập" style="min-height:110px" placeholder="6 | Số học | 3 + 4 = ? | 5 | 6 | 7 | 8 | C | Cộng hai số tự nhiên."></textarea>
+      <div class="adminbtns"><button class="btn big" id="qBulkBtn" type="button">＋ Thêm các câu này</button><span class="msg" id="qBulkMsg" style="margin:0"></span></div>
+    </details>
+    <div class="cho" id="aCho" hidden></div>
+    <ol class="steps">
+      <li>Đặt các file đã tải vào thư mục <code>tai-lieu/</code> hoặc <code>de-thi/</code> (cạnh <code>index.html</code>).</li>
+      <li>Thay <code>index.html</code> cũ bằng file mới.</li>
+      <li>Tải cả thư mục lên nơi lưu trữ (GitHub Pages, Netlify…).</li>
+    </ol>
+  </section>
+
+  <h2 class="sec-title">Tài liệu, đề thi &amp; luyện tập</h2>
+  <p class="sec-sub">Đọc tài liệu, làm đề thi thử hoặc luyện trắc nghiệm online có giải thích từng câu. Mục có ⭐ dành cho thành viên đã đăng nhập.</p>
+  <div class="bar">
+    <div class="seg">
+      <button id="secTL" class="active" type="button" aria-pressed="true">📚 Tài liệu</button>
+      <button id="secDT" type="button" aria-pressed="false">📝 Đề thi thử</button>
+      <button id="secLT" type="button" aria-pressed="false">✍️ Luyện tập</button>
+      <button id="secTD" type="button" aria-pressed="false">📊 Tiến độ</button>
+    </div>
+    <input id="search" type="search" placeholder="🔍 Tìm kiếm..." aria-label="Tìm kiếm tài liệu hoặc đề thi">
+    <select id="cdSel" aria-label="Chủ đề"></select>
+    <select id="sort" aria-label="Sắp xếp">
+      <option value="new">Mới nhất</option>
+      <option value="lop">Theo lớp</option>
+      <option value="ten">Tên A–Z</option>
+    </select>
+  </div>
+  <div class="lop-tabs" id="lopTabs" role="tablist" aria-label="Chọn lớp"></div>
+  <div class="info" id="info"></div>
+  <div class="grid" id="grid"></div>
+  <div id="luyenTap" hidden></div>
+  <div id="tienDo" class="td" hidden></div>
+</main>
+
+<section class="block" id="cong-thuc">
+  <h2 class="sec-title">Công thức cần nhớ</h2>
+  <p class="sec-sub">Tóm tắt các công thức quan trọng theo từng lớp để ôn nhanh trước khi làm bài.</p>
+  <div class="lop-tabs" id="ctTabs" aria-label="Chọn lớp xem công thức"></div>
+  <div id="ctBody"></div>
+</section>
+
+<section class="block" id="vi-sao">
+  <h2 class="sec-title">Vì sao chọn trang này?</h2>
+  <p class="sec-sub">Tài liệu gọn, dễ học và dùng được ngay.</p>
+  <div class="feat-grid">
+    <div class="feat"><div class="ic">📖</div><h3>Soạn theo chương trình THCS</h3><p>Lý thuyết ngắn gọn, ví dụ mẫu và bài tập từ cơ bản đến nâng cao cho từng lớp.</p></div>
+    <div class="feat"><div class="ic">✅</div><h3>Có đáp án để tự chấm</h3><p>Đề thi thử đi kèm đáp án, giúp bạn biết mình sai ở đâu và sửa ngay.</p></div>
+    <div class="feat"><div class="ic">🆓</div><h3>Miễn phí</h3><p>Xem và tải về không mất phí. Đăng ký tài khoản để mở thêm nhiều tài liệu khác.</p></div>
+    <div class="feat"><div class="ic">🔄</div><h3>Thường xuyên bổ sung</h3><p>Tài liệu và đề thi mới được thêm vào kho, nhớ ghé lại thường xuyên nhé.</p></div>
+  </div>
+</section>
+
+<section class="block" id="lo-trinh">
+  <h2 class="sec-title">Lộ trình ôn tập gợi ý</h2>
+  <p class="sec-sub">Làm theo 4 bước này để học chắc và ôn thi hiệu quả.</p>
+  <div class="steps-row">
+    <div class="stp"><h3>Nắm lý thuyết</h3><p>Đọc tài liệu theo lớp và chủ đề, ghi lại công thức quan trọng.</p></div>
+    <div class="stp"><h3>Luyện bài tập</h3><p>Làm trắc nghiệm online theo lớp và chủ đề, có giải thích từng câu.</p></div>
+    <div class="stp"><h3>Làm đề thi thử</h3><p>Bấm giờ và làm như thi thật để quen áp lực thời gian.</p></div>
+    <div class="stp"><h3>Đối chiếu đáp án</h3><p>Chấm bài, ghi lại các lỗi sai rồi ôn lại phần đó.</p></div>
+  </div>
+</section>
+
+<section class="block" id="gioi-thieu">
+  <h2 class="sec-title">Giới thiệu</h2>
+  <div class="about" style="margin-top:14px">
+    <div class="avatar" aria-hidden="true">∑</div>
+    <div>
+      <p id="gtText"></p>
+      <p>Nếu thấy tài liệu có sai sót hoặc muốn đề xuất chủ đề mới, bạn cứ gửi góp ý ở mục Liên hệ bên dưới nhé.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="hoi-dap">
+  <h2 class="sec-title">Câu hỏi thường gặp</h2>
+  <div style="margin-top:14px">
+    <details class="faq"><summary>Tài liệu có miễn phí không?</summary><p>Có. Bạn có thể xem và tải về miễn phí. Một số tài liệu và đề thi đánh dấu ⭐ cần đăng nhập để xem.</p></details>
+    <details class="faq"><summary>Làm sao để xem các tài liệu ⭐?</summary><p>Bấm Đăng ký ở góc trên, tạo tài khoản bằng email rồi đăng nhập. Sau đó các mục ⭐ sẽ mở ra.</p></details>
+    <details class="faq"><summary>Đề thi thử có đáp án không?</summary><p>Phần lớn đề có nút Đáp án ngay trên thẻ. Bạn nên làm bài xong rồi mới mở đáp án để đối chiếu.</p></details>
+    <details class="faq"><summary>Phần Luyện tập hoạt động thế nào?</summary><p>Bạn chọn lớp và chủ đề, rồi bấm Bắt đầu. Mỗi câu trắc nghiệm có giải thích ngay sau khi trả lời, cuối bài có điểm số và danh sách câu sai để làm lại.</p></details>
+    <details class="faq"><summary>Thi bấm giờ là gì?</summary><p>Bạn làm hết số câu đã chọn trong thời gian giới hạn, có thể chuyển qua lại giữa các câu. Khi nộp bài hoặc hết giờ, hệ thống chấm điểm và cho xem lại đáp án cùng giải thích từng câu.</p></details>
+    <details class="faq"><summary>Tiến độ học tập của tôi được lưu ở đâu?</summary><p>Tiến độ, câu sai, câu đánh dấu và tài liệu đã lưu được lưu ngay trên trình duyệt của bạn, riêng theo tài khoản. Nếu bạn xóa dữ liệu trình duyệt hoặc đổi sang thiết bị khác thì sẽ không còn.</p></details>
+    <details class="faq"><summary>Tải tài liệu về máy như thế nào?</summary><p>Bấm nút Xem / Tải trên thẻ tài liệu. File mở ra trong tab mới, bạn có thể đọc trực tiếp hoặc lưu về máy.</p></details>
+    <details class="faq"><summary>Tôi muốn báo lỗi hoặc đề xuất tài liệu mới?</summary><p>Bạn gửi tin nhắn ở mục Liên hệ, ghi rõ lớp, tên tài liệu và nội dung cần sửa nhé.</p></details>
+  </div>
+</section>
+
+<section class="block" id="lien-he">
+  <h2 class="sec-title">Liên hệ &amp; góp ý</h2>
+  <div class="contact" style="margin-top:14px">
+    <div class="box">
+      <h3>Gửi tin nhắn</h3>
+      <form id="lhForm">
+        <label for="lhTen">Tên của bạn</label>
+        <input id="lhTen" type="text" required>
+        <label for="lhEmail">Email của bạn</label>
+        <input id="lhEmail" type="email" required>
+        <label for="lhND">Nội dung</label>
+        <textarea id="lhND" required></textarea>
+        <button class="submit" type="submit">Gửi qua email</button>
+      </form>
+    </div>
+    <div class="box">
+      <h3>Thông tin liên hệ</h3>
+      <div id="lhInfo"></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="f-grid">
+    <div>
+      <h4>📐 Toán THCS</h4>
+      <p>Tài liệu và đề thi thử Toán cấp 2 do mình tự soạn. Chúc các bạn học tốt!</p>
+    </div>
+    <div>
+      <h4>Khám phá</h4>
+      <a href="#thu-vien" data-muc="tai-lieu">Tài liệu</a>
+      <a href="#thu-vien" data-muc="de-thi">Đề thi thử</a>
+      <a href="#thu-vien" data-muc="luyen-tap">Luyện tập</a>
+      <a href="#cong-thuc">Công thức</a>
+      <a href="#hoi-dap">Hỏi đáp</a>
+    </div>
+    <div>
+      <h4>Liên hệ</h4>
+      <div id="ftLienHe"></div>
+    </div>
+  </div>
+  <div class="copy"><span id="copyNam"></span><span>Tài liệu soạn để học tập, không dùng cho mục đích thương mại.</span></div>
+</footer>
+<button class="topbtn" id="topBtn" type="button" aria-label="Lên đầu trang" hidden>↑</button>
+
+<div class="overlay" id="overlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="close" id="mClose" aria-label="Đóng">×</button>
+    <h2 id="mTitle">Tài khoản</h2>
+    <div class="tabs">
+      <button class="tab active" id="tabLogin" type="button">Đăng nhập</button>
+      <button class="tab" id="tabReg" type="button">Đăng ký</button>
+    </div>
+    <form id="authForm" autocomplete="on">
+      <div id="rowTen" hidden>
+        <label for="fTen">Tên của bạn</label>
+        <input id="fTen" type="text" autocomplete="name" placeholder="Nguyễn Văn A">
+      </div>
+      <label for="fEmail">Email</label>
+      <input id="fEmail" type="email" autocomplete="email" placeholder="ban@email.com" required>
+      <label for="fMk">Mật khẩu</label>
+      <input id="fMk" type="password" autocomplete="current-password" placeholder="Ít nhất 6 ký tự" required>
+      <div id="rowMk2" hidden>
+        <label for="fMk2">Nhập lại mật khẩu</label>
+        <input id="fMk2" type="password" autocomplete="new-password">
+      </div>
+      <div class="msg" id="msg" role="alert"></div>
+      <button class="submit" id="submitBtn" type="submit">Đăng nhập</button>
+    </form>
+  </div>
+</div>
+
+<!-- ===== DANH SÁCH TÀI LIỆU & ĐỀ THI (khu quản lý sẽ tự cập nhật phần này) ===== -->
+<script id="du-lieu" type="application/json">
+[
+  {"tieuDe":"Các dạng bài phân số cơ bản","lop":6,"chuDe":"Số học","moTa":"Tổng hợp lý thuyết và bài tập về cộng, trừ, nhân, chia phân số.","link":"tai-lieu/lop6-phan-so.pdf","ngay":"2026-09-01"},
+  {"tieuDe":"Số nguyên và các phép tính","lop":6,"chuDe":"Số học","moTa":"Ôn tập số nguyên, quy tắc dấu ngoặc, bài tập có đáp án.","link":"tai-lieu/lop6-so-nguyen.pdf","ngay":"2026-09-05"},
+  {"tieuDe":"Tỉ lệ thức và đại lượng tỉ lệ","lop":7,"chuDe":"Đại số","moTa":"Lý thuyết, ví dụ và bài tập vận dụng.","link":"tai-lieu/lop7-ti-le-thuc.pdf","ngay":"2026-09-10"},
+  {"tieuDe":"Hằng đẳng thức đáng nhớ","lop":8,"chuDe":"Đại số","moTa":"7 hằng đẳng thức và các dạng bài phân tích đa thức thành nhân tử.","link":"tai-lieu/lop8-hang-dang-thuc.pdf","ngay":"2026-09-15","thanhVien":true},
+  {"tieuDe":"Tam giác đồng dạng","lop":8,"chuDe":"Hình học","moTa":"Các trường hợp đồng dạng và bài tập chứng minh.","link":"tai-lieu/lop8-tam-giac-dong-dang.pdf","ngay":"2026-09-20","thanhVien":true},
+  {"tieuDe":"Hệ thức lượng trong tam giác vuông","lop":9,"chuDe":"Hình học","moTa":"Công thức, mẹo nhớ và bài tập luyện thi vào lớp 10.","link":"tai-lieu/lop9-he-thuc-luong.pdf","ngay":"2026-10-01","thanhVien":true},
+  {"loai":"de-thi","tieuDe":"Đề thi thử giữa kì 1 – Toán 6","lop":6,"chuDe":"Giữa kì 1","thoiGian":"60 phút","moTa":"Đề gồm trắc nghiệm và tự luận, có đáp án chi tiết.","link":"de-thi/lop6-giua-ki-1.pdf","linkDapAn":"de-thi/lop6-giua-ki-1-dap-an.pdf","ngay":"2026-10-05"},
+  {"loai":"de-thi","tieuDe":"Đề thi thử cuối kì 1 – Toán 7","lop":7,"chuDe":"Cuối kì 1","thoiGian":"90 phút","moTa":"Bám sát chương trình học kì 1.","link":"de-thi/lop7-cuoi-ki-1.pdf","linkDapAn":"de-thi/lop7-cuoi-ki-1-dap-an.pdf","ngay":"2026-10-08"},
+  {"loai":"de-thi","tieuDe":"Đề thi thử giữa kì 1 – Toán 8","lop":8,"chuDe":"Giữa kì 1","thoiGian":"90 phút","moTa":"Tập trung hằng đẳng thức và phân tích đa thức.","link":"de-thi/lop8-giua-ki-1.pdf","linkDapAn":"de-thi/lop8-giua-ki-1-dap-an.pdf","ngay":"2026-10-10","thanhVien":true},
+  {"loai":"de-thi","tieuDe":"Đề thi thử vào lớp 10 – Đề số 1","lop":9,"chuDe":"Thi vào 10","thoiGian":"120 phút","moTa":"Đề luyện thi vào 10 theo cấu trúc mới.","link":"de-thi/lop9-vao-10-de-1.pdf","linkDapAn":"de-thi/lop9-vao-10-de-1-dap-an.pdf","ngay":"2026-10-12","thanhVien":true},
+  {"loai":"de-thi","tieuDe":"Đề thi thử giữa kì 2 – Toán 6","lop":6,"chuDe":"Giữa kì 2","thoiGian":"60 phút","moTa":"Phân số, số thập phân và hình học cơ bản.","link":"de-thi/lop6-giua-ki-2.pdf","linkDapAn":"de-thi/lop6-giua-ki-2-dap-an.pdf","ngay":"2026-10-13"},
+  {"loai":"de-thi","tieuDe":"Đề thi thử cuối kì 2 – Toán 6","lop":6,"chuDe":"Cuối kì 2","thoiGian":"90 phút","moTa":"Tổng hợp kiến thức cả năm lớp 6.","link":"de-thi/lop6-cuoi-ki-2.pdf","linkDapAn":"de-thi/lop6-cuoi-ki-2-dap-an.pdf","ngay":"2026-10-14"},
+  {"loai":"de-thi","tieuDe":"Đề thi thử giữa kì 2 – Toán 7","lop":7,"chuDe":"Giữa kì 2","thoiGian":"60 phút","moTa":"Biểu thức đại số và tam giác.","link":"de-thi/lop7-giua-ki-2.pdf","linkDapAn":"de-thi/lop7-giua-ki-2-dap-an.pdf","ngay":"2026-10-15"},
+  {"loai":"de-thi","tieuDe":"Đề thi thử cuối kì 2 – Toán 7","lop":7,"chuDe":"Cuối kì 2","thoiGian":"90 phút","moTa":"Tổng hợp kiến thức cả năm lớp 7.","link":"de-thi/lop7-cuoi-ki-2.pdf","linkDapAn":"de-thi/lop7-cuoi-ki-2-dap-an.pdf","ngay":"2026-10-16"},
+  {"loai":"de-thi","tieuDe":"Đề thi thử giữa kì 2 – Toán 8","lop":8,"chuDe":"Giữa kì 2","thoiGian":"90 phút","moTa":"Phương trình bậc nhất và tam giác đồng dạng.","link":"de-thi/lop8-giua-ki-2.pdf","linkDapAn":"de-thi/lop8-giua-ki-2-dap-an.pdf","ngay":"2026-10-17","thanhVien":true},
+  {"loai":"de-thi","tieuDe":"Đề thi thử cuối kì 2 – Toán 8","lop":8,"chuDe":"Cuối kì 2","thoiGian":"90 phút","moTa":"Tổng hợp kiến thức cả năm lớp 8.","link":"de-thi/lop8-cuoi-ki-2.pdf","linkDapAn":"de-thi/lop8-cuoi-ki-2-dap-an.pdf","ngay":"2026-10-17","thanhVien":true},
+  {"loai":"de-thi","tieuDe":"Đề thi thử giữa kì 2 – Toán 9","lop":9,"chuDe":"Giữa kì 2","thoiGian":"90 phút","moTa":"Hệ phương trình và hàm số y = ax².","link":"de-thi/lop9-giua-ki-2.pdf","linkDapAn":"de-thi/lop9-giua-ki-2-dap-an.pdf","ngay":"2026-10-18"},
+  {"loai":"de-thi","tieuDe":"Đề thi thử cuối kì 2 – Toán 9","lop":9,"chuDe":"Cuối kì 2","thoiGian":"90 phút","moTa":"Ôn tập tổng hợp chuẩn bị thi vào 10.","link":"de-thi/lop9-cuoi-ki-2.pdf","linkDapAn":"de-thi/lop9-cuoi-ki-2-dap-an.pdf","ngay":"2026-10-18","thanhVien":true}
+]
+</script>
+
+<!-- ===== CÂU HỎI LUYỆN TẬP (dung = vị trí đáp án đúng, bắt đầu từ 0) ===== -->
+<script id="cau-hoi" type="application/json">[
+{"lop":6,"chuDe":"Số học","cauHoi":"3/4 + 1/4 = ?","dapAn":["1","4/8","1/2","3/16"],"dung":0,"giaiThich":"Hai phân số cùng mẫu thì cộng tử và giữ nguyên mẫu: (3 + 1)/4 = 4/4 = 1."},
+{"lop":6,"chuDe":"Số học","cauHoi":"Kết quả của (−5) + 8 là:","dapAn":["−13","−3","3","13"],"dung":2,"giaiThich":"Cộng hai số nguyên khác dấu: lấy 8 − 5 = 3, mang dấu của số có giá trị tuyệt đối lớn hơn là dấu dương."},
+{"lop":6,"chuDe":"Số học","cauHoi":"Ước chung lớn nhất của 12 và 18 là:","dapAn":["2","3","6","36"],"dung":2,"giaiThich":"12 = 2² · 3 và 18 = 2 · 3². Lấy thừa số chung với số mũ nhỏ nhất: 2 · 3 = 6."},
+{"lop":6,"chuDe":"Số học","cauHoi":"Phân số nào bằng phân số 2/3?","dapAn":["4/9","4/6","6/4","3/2"],"dung":1,"giaiThich":"Nhân cả tử và mẫu của 2/3 với 2 được 4/6."},
+{"lop":6,"chuDe":"Hình học","cauHoi":"Hình chữ nhật dài 8 cm, rộng 5 cm có chu vi là:","dapAn":["13 cm","26 cm","40 cm","80 cm"],"dung":1,"giaiThich":"Chu vi = 2 × (dài + rộng) = 2 × (8 + 5) = 26 cm."},
+{"lop":7,"chuDe":"Đại số","cauHoi":"Biết x/3 = 4/6. Giá trị của x là:","dapAn":["1","2","3","4"],"dung":1,"giaiThich":"x = 3 · 4 / 6 = 2 (tính chất tỉ lệ thức)."},
+{"lop":7,"chuDe":"Đại số","cauHoi":"y tỉ lệ thuận với x theo hệ số tỉ lệ 3. Khi x = 5 thì y bằng:","dapAn":["8","15","2","35"],"dung":1,"giaiThich":"y = 3x nên y = 3 · 5 = 15."},
+{"lop":7,"chuDe":"Đại số","cauHoi":"Giá trị của (−2)³ là:","dapAn":["−6","6","−8","8"],"dung":2,"giaiThich":"(−2)³ = (−2)·(−2)·(−2) = −8. Lũy thừa bậc lẻ của số âm là số âm."},
+{"lop":7,"chuDe":"Hình học","cauHoi":"Tổng ba góc trong một tam giác bằng:","dapAn":["90°","180°","270°","360°"],"dung":1,"giaiThich":"Tổng ba góc của một tam giác luôn bằng 180°."},
+{"lop":7,"chuDe":"Hình học","cauHoi":"Tam giác cân có góc ở đỉnh bằng 40°. Mỗi góc ở đáy bằng:","dapAn":["40°","60°","70°","140°"],"dung":2,"giaiThich":"Hai góc ở đáy bằng nhau: (180° − 40°) / 2 = 70°."},
+{"lop":8,"chuDe":"Đại số","cauHoi":"(a + b)² bằng:","dapAn":["a² + b²","a² + 2ab + b²","a² − 2ab + b²","2a + 2b"],"dung":1,"giaiThich":"Đây là hằng đẳng thức bình phương của một tổng."},
+{"lop":8,"chuDe":"Đại số","cauHoi":"Phân tích x² − 9 thành nhân tử:","dapAn":["(x − 3)²","(x + 3)²","(x − 3)(x + 3)","(x − 9)(x + 1)"],"dung":2,"giaiThich":"x² − 9 = x² − 3² = (x − 3)(x + 3) (hiệu hai bình phương)."},
+{"lop":8,"chuDe":"Đại số","cauHoi":"Khai triển (x − 2)²:","dapAn":["x² − 4","x² + 4","x² − 4x + 4","x² − 4x − 4"],"dung":2,"giaiThich":"(x − 2)² = x² − 2·x·2 + 2² = x² − 4x + 4."},
+{"lop":8,"chuDe":"Hình học","cauHoi":"Hai tam giác đồng dạng với tỉ số đồng dạng k = 2. Tỉ số chu vi của chúng là:","dapAn":["1","2","4","1/2"],"dung":1,"giaiThich":"Tỉ số chu vi bằng tỉ số đồng dạng, tức là 2."},
+{"lop":8,"chuDe":"Hình học","cauHoi":"Hai tam giác đồng dạng với tỉ số k = 3. Tỉ số diện tích của chúng là:","dapAn":["3","6","9","27"],"dung":2,"giaiThich":"Tỉ số diện tích bằng bình phương tỉ số đồng dạng: 3² = 9."},
+{"lop":9,"chuDe":"Đại số","cauHoi":"Căn bậc hai số học của 16 là:","dapAn":["−4","4","8","±4"],"dung":1,"giaiThich":"Căn bậc hai số học của một số dương là số dương, nên √16 = 4."},
+{"lop":9,"chuDe":"Đại số","cauHoi":"Nghiệm (x; y) của hệ x + y = 5 và x − y = 1 là:","dapAn":["(2; 3)","(3; 2)","(4; 1)","(1; 4)"],"dung":1,"giaiThich":"Cộng hai phương trình: 2x = 6 nên x = 3, suy ra y = 2."},
+{"lop":9,"chuDe":"Đại số","cauHoi":"Cho hàm số y = x². Khi x = −3 thì y bằng:","dapAn":["−9","9","6","−6"],"dung":1,"giaiThich":"y = (−3)² = 9."},
+{"lop":9,"chuDe":"Hình học","cauHoi":"Tam giác vuông có hai cạnh góc vuông dài 3 và 4. Cạnh huyền dài:","dapAn":["5","6","7","12"],"dung":0,"giaiThich":"Theo định lý Pythagore: √(3² + 4²) = √25 = 5."},
+{"lop":9,"chuDe":"Hình học","cauHoi":"sin 30° bằng:","dapAn":["√3/2","1/2","1","√2/2"],"dung":1,"giaiThich":"sin 30° = 1/2 (giá trị lượng giác của góc đặc biệt)."},
+{"lop":6,"chuDe":"Số học","cauHoi":"Số nào sau đây là số nguyên tố?","dapAn":["9","15","17","21"],"dung":2,"giaiThich":"17 chỉ có hai ước là 1 và 17 nên là số nguyên tố. Các số 9, 15, 21 đều chia hết cho 3."},
+{"lop":6,"chuDe":"Số học","cauHoi":"Bội chung nhỏ nhất của 4 và 6 là:","dapAn":["12","24","10","2"],"dung":0,"giaiThich":"4 = 2² và 6 = 2 · 3. BCNN lấy mọi thừa số nguyên tố với số mũ lớn nhất: 2² · 3 = 12."},
+{"lop":6,"chuDe":"Số học","cauHoi":"Kết quả của (−7) − (−3) là:","dapAn":["−10","−4","4","10"],"dung":1,"giaiThich":"Trừ đi một số âm là cộng với số đối của nó: (−7) + 3 = −4."},
+{"lop":6,"chuDe":"Số học","cauHoi":"Phân tích số 120 ra thừa số nguyên tố:","dapAn":["2² · 3 · 5","2³ · 3 · 5","2 · 3² · 5","2³ · 5²"],"dung":1,"giaiThich":"120 = 2 · 60 = 2 · 2 · 30 = 2 · 2 · 2 · 15 = 2³ · 3 · 5."},
+{"lop":6,"chuDe":"Số học","cauHoi":"Làm tròn số 3,456 đến hàng phần mười:","dapAn":["3,4","3,5","3,46","3,45"],"dung":1,"giaiThich":"Chữ số hàng phần trăm là 5 (≥ 5) nên làm tròn lên: 3,456 ≈ 3,5."},
+{"lop":6,"chuDe":"Số học","cauHoi":"Số đối của −9 là:","dapAn":["−9","9","1/9","−1/9"],"dung":1,"giaiThich":"Hai số đối nhau có tổng bằng 0: (−9) + 9 = 0."},
+{"lop":6,"chuDe":"Số học","cauHoi":"Tập hợp các ước của 6 là:","dapAn":["{1; 2; 3; 6}","{1; 2; 3}","{2; 3; 6}","{0; 1; 2; 3; 6}"],"dung":0,"giaiThich":"6 chia hết cho 1, 2, 3 và 6; số 0 không phải là ước của 6."},
+{"lop":6,"chuDe":"Số học","cauHoi":"Hai phần năm của 40 bằng:","dapAn":["8","16","20","100"],"dung":1,"giaiThich":"40 · 2/5 = 40 : 5 · 2 = 16."},
+{"lop":6,"chuDe":"Hình học","cauHoi":"Hình vuông có cạnh 6 cm thì diện tích bằng:","dapAn":["12 cm²","24 cm²","36 cm²","6 cm²"],"dung":2,"giaiThich":"S = a² = 6² = 36 (cm²)."},
+{"lop":6,"chuDe":"Hình học","cauHoi":"Hình thoi có hai đường chéo dài 6 cm và 8 cm. Diện tích hình thoi là:","dapAn":["48 cm²","24 cm²","14 cm²","28 cm²"],"dung":1,"giaiThich":"S = (m · n) / 2 = (6 · 8) / 2 = 24 (cm²)."},
+{"lop":6,"chuDe":"Hình học","cauHoi":"M là trung điểm của đoạn thẳng AB dài 10 cm. Độ dài AM bằng:","dapAn":["10 cm","5 cm","20 cm","2,5 cm"],"dung":1,"giaiThich":"Trung điểm chia đoạn thẳng thành hai phần bằng nhau: AM = AB : 2 = 5 cm."},
+{"lop":7,"chuDe":"Đại số","cauHoi":"√81 bằng:","dapAn":["9","−9","40,5","81"],"dung":0,"giaiThich":"Căn bậc hai số học của 81 là số dương có bình phương bằng 81, tức 9."},
+{"lop":7,"chuDe":"Đại số","cauHoi":"Biết x/y = 3/4 và x + y = 21. Giá trị của x là:","dapAn":["9","12","7","14"],"dung":0,"giaiThich":"Áp dụng dãy tỉ số bằng nhau: x/3 = y/4 = (x + y)/(3 + 4) = 21/7 = 3, suy ra x = 3 · 3 = 9."},
+{"lop":7,"chuDe":"Đại số","cauHoi":"Đại lượng y tỉ lệ nghịch với x theo hệ số tỉ lệ 12. Khi x = 4 thì y bằng:","dapAn":["3","8","48","16"],"dung":0,"giaiThich":"x · y = 12 nên y = 12 : 4 = 3."},
+{"lop":7,"chuDe":"Đại số","cauHoi":"Kết quả của x⁵ · x³ là:","dapAn":["x⁸","x¹⁵","x²","2x⁸"],"dung":0,"giaiThich":"Nhân hai lũy thừa cùng cơ số thì giữ nguyên cơ số và cộng số mũ: x⁵ · x³ = x⁵⁺³ = x⁸."},
+{"lop":7,"chuDe":"Đại số","cauHoi":"Số hữu tỉ nào sau đây là số âm?","dapAn":["3/5","−2/7","0","5/5"],"dung":1,"giaiThich":"Số hữu tỉ âm là số nhỏ hơn 0. Trong các số trên chỉ có −2/7 \u003c 0."},
+{"lop":7,"chuDe":"Đại số","cauHoi":"|−5| bằng:","dapAn":["−5","5","0","10"],"dung":1,"giaiThich":"Giá trị tuyệt đối của một số luôn không âm: |−5| = 5."},
+{"lop":7,"chuDe":"Đại số","cauHoi":"Làm tròn số 7,2548 đến chữ số thập phân thứ hai:","dapAn":["7,25","7,26","7,3","7,255"],"dung":0,"giaiThich":"Chữ số thập phân thứ ba là 4 (\u003c 5) nên giữ nguyên: 7,2548 ≈ 7,25."},
+{"lop":7,"chuDe":"Hình học","cauHoi":"Góc ngoài của tam giác bằng:","dapAn":["Tổng hai góc trong không kề với nó","Góc trong kề với nó","180°","Hiệu hai góc trong không kề với nó"],"dung":0,"giaiThich":"Tính chất góc ngoài của tam giác: góc ngoài bằng tổng hai góc trong không kề với nó."},
+{"lop":7,"chuDe":"Hình học","cauHoi":"Tam giác ABC có góc A = 50° và góc B = 60°. Góc C bằng:","dapAn":["70°","80°","60°","90°"],"dung":0,"giaiThich":"Tổng ba góc bằng 180° nên góc C = 180° − 50° − 60° = 70°."},
+{"lop":7,"chuDe":"Hình học","cauHoi":"Mỗi góc của tam giác đều bằng:","dapAn":["30°","45°","60°","90°"],"dung":2,"giaiThich":"Tam giác đều có ba góc bằng nhau và tổng bằng 180° nên mỗi góc là 180° : 3 = 60°."},
+{"lop":7,"chuDe":"Hình học","cauHoi":"Hai góc đối đỉnh thì:","dapAn":["Bằng nhau","Bù nhau","Phụ nhau","Luôn bằng 90°"],"dung":0,"giaiThich":"Tính chất hai góc đối đỉnh: chúng bằng nhau."},
+{"lop":8,"chuDe":"Đại số","cauHoi":"(x + 3)(x − 3) bằng:","dapAn":["x² + 9","x² − 9","x² − 6x + 9","x² + 6x + 9"],"dung":1,"giaiThich":"Hằng đẳng thức hiệu hai bình phương: (A + B)(A − B) = A² − B², nên (x + 3)(x − 3) = x² − 9."},
+{"lop":8,"chuDe":"Đại số","cauHoi":"Nghiệm của phương trình 2x − 6 = 0 là:","dapAn":["x = −3","x = 3","x = 6","x = 12"],"dung":1,"giaiThich":"2x = 6 nên x = 3."},
+{"lop":8,"chuDe":"Đại số","cauHoi":"Phân tích đa thức 2x² + 4x thành nhân tử:","dapAn":["2x(x + 4)","2x(x + 2)","x(x + 2)","2(x + 2)"],"dung":1,"giaiThich":"Đặt nhân tử chung 2x: 2x² + 4x = 2x(x + 2)."},
+{"lop":8,"chuDe":"Đại số","cauHoi":"Khai triển (x + 1)³:","dapAn":["x³ + 1","x³ + 3x² + 3x + 1","x³ + 3x + 1","x³ + 2x² + 2x + 1"],"dung":1,"giaiThich":"(A + B)³ = A³ + 3A²B + 3AB² + B³ với A = x, B = 1."},
+{"lop":8,"chuDe":"Đại số","cauHoi":"Điều kiện xác định của phân thức 1/(x − 2) là:","dapAn":["x ≠ 2","x ≠ −2","x ≠ 0","x > 2"],"dung":0,"giaiThich":"Mẫu thức phải khác 0: x − 2 ≠ 0 nên x ≠ 2."},
+{"lop":8,"chuDe":"Đại số","cauHoi":"Rút gọn (x² − 1)/(x − 1) với x ≠ 1:","dapAn":["x − 1","x + 1","x² + 1","1"],"dung":1,"giaiThich":"x² − 1 = (x − 1)(x + 1), chia cho x − 1 được x + 1."},
+{"lop":8,"chuDe":"Đại số","cauHoi":"Giải phương trình 3x + 2 = 11:","dapAn":["x = 2","x = 3","x = 4","x = 13/3"],"dung":1,"giaiThich":"3x = 11 − 2 = 9 nên x = 3."},
+{"lop":8,"chuDe":"Hình học","cauHoi":"Tam giác ABC có D thuộc AB, E thuộc AC, DE // BC. Biết AD = 2, DB = 4, AE = 3. Độ dài EC là:","dapAn":["4","5","6","8"],"dung":2,"giaiThich":"Theo định lí Thalès: AD/DB = AE/EC, tức 2/4 = 3/EC nên EC = 6."},
+{"lop":8,"chuDe":"Hình học","cauHoi":"Hình thang có hai đáy 6 cm, 10 cm và chiều cao 5 cm. Diện tích là:","dapAn":["30 cm²","40 cm²","80 cm²","60 cm²"],"dung":1,"giaiThich":"S = (a + b) · h / 2 = (6 + 10) · 5 / 2 = 40 (cm²)."},
+{"lop":8,"chuDe":"Hình học","cauHoi":"Tứ giác có bốn góc vuông là:","dapAn":["Hình chữ nhật","Hình thoi","Hình bình hành","Hình thang cân"],"dung":0,"giaiThich":"Tứ giác có bốn góc vuông là hình chữ nhật."},
+{"lop":8,"chuDe":"Hình học","cauHoi":"Đường trung bình của tam giác ứng với cạnh BC thì có độ dài bằng:","dapAn":["Nửa cạnh BC","Cạnh BC","Hai lần cạnh BC","Một phần ba cạnh BC"],"dung":0,"giaiThich":"Đường trung bình của tam giác song song với cạnh thứ ba và bằng nửa cạnh ấy."},
+{"lop":9,"chuDe":"Đại số","cauHoi":"Phương trình x² − 5x + 6 = 0 có nghiệm:","dapAn":["x = 1 hoặc x = 6","x = 2 hoặc x = 3","x = −2 hoặc x = −3","x = 5 hoặc x = 6"],"dung":1,"giaiThich":"Tổng hai nghiệm bằng 5 và tích bằng 6 nên hai nghiệm là 2 và 3. Ta có x² − 5x + 6 = (x − 2)(x − 3)."},
+{"lop":9,"chuDe":"Đại số","cauHoi":"Biệt thức Δ của phương trình x² + 2x + 1 = 0 là:","dapAn":["0","4","−4","8"],"dung":0,"giaiThich":"Δ = b² − 4ac = 2² − 4 · 1 · 1 = 0."},
+{"lop":9,"chuDe":"Đại số","cauHoi":"Tổng hai nghiệm của phương trình x² − 7x + 10 = 0 là:","dapAn":["7","−7","10","−10"],"dung":0,"giaiThich":"Theo hệ thức Vi-ét: x₁ + x₂ = −b/a = 7."},
+{"lop":9,"chuDe":"Đại số","cauHoi":"Rút gọn √12:","dapAn":["2√3","3√2","4√3","6"],"dung":0,"giaiThich":"√12 = √(4 · 3) = √4 · √3 = 2√3."},
+{"lop":9,"chuDe":"Đại số","cauHoi":"Điều kiện xác định của √(x − 4) là:","dapAn":["x ≥ 4","x > 4","x ≤ 4","x ≥ −4"],"dung":0,"giaiThich":"Biểu thức dưới dấu căn phải không âm: x − 4 ≥ 0 nên x ≥ 4."},
+{"lop":9,"chuDe":"Đại số","cauHoi":"Đồ thị hàm số y = 2x − 1 cắt trục tung tại điểm:","dapAn":["(0; −1)","(0; 1)","(1; 0)","(1/2; 0)"],"dung":0,"giaiThich":"Trục tung có x = 0, khi đó y = 2 · 0 − 1 = −1."},
+{"lop":9,"chuDe":"Đại số","cauHoi":"Hàm số y = −3x + 2 là hàm số:","dapAn":["Đồng biến trên ℝ","Nghịch biến trên ℝ","Hàm hằng","Hàm số bậc hai"],"dung":1,"giaiThich":"Hệ số a = −3 \u003c 0 nên hàm số nghịch biến trên ℝ."},
+{"lop":9,"chuDe":"Hình học","cauHoi":"Tam giác ABC vuông tại A có AB = 6 cm, AC = 8 cm. Đường cao AH bằng:","dapAn":["4,8 cm","5 cm","4 cm","6 cm"],"dung":0,"giaiThich":"BC = √(6² + 8²) = 10. Ta có AH · BC = AB · AC nên AH = 6 · 8 / 10 = 4,8 (cm)."},
+{"lop":9,"chuDe":"Hình học","cauHoi":"cos 60° bằng:","dapAn":["1/2","√3/2","1","0"],"dung":0,"giaiThich":"cos 60° = 1/2 (giá trị lượng giác của góc đặc biệt)."},
+{"lop":9,"chuDe":"Hình học","cauHoi":"Góc nội tiếp chắn nửa đường tròn có số đo:","dapAn":["90°","180°","60°","45°"],"dung":0,"giaiThich":"Góc nội tiếp bằng nửa số đo cung bị chắn; nửa đường tròn là cung 180° nên góc bằng 90°."},
+{"lop":9,"chuDe":"Hình học","cauHoi":"Đường tròn bán kính 5 cm có chu vi (lấy π ≈ 3,14) là:","dapAn":["15,7 cm","31,4 cm","78,5 cm","62,8 cm"],"dung":1,"giaiThich":"C = 2πR = 2 · 3,14 · 5 = 31,4 (cm)."},
+{"lop":9,"chuDe":"Hình học","cauHoi":"tan 45° bằng:","dapAn":["1","0","√3","√3/3"],"dung":0,"giaiThich":"Tam giác vuông cân có hai cạnh góc vuông bằng nhau nên tan 45° = đối/kề = 1."},
+{"lop":9,"chuDe":"Hình học","cauHoi":"Góc ở tâm có số đo 80° thì cung bị chắn có số đo:","dapAn":["40°","80°","160°","100°"],"dung":1,"giaiThich":"Số đo của góc ở tâm bằng số đo của cung bị chắn."}
+]
+</script>
+
+<script>
+// Chụp nguyên bản trang (trước khi vẽ) để khu quản lý xuất ra bản cập nhật
+const NGUON = ("<!DOCTYPE html>\n" + document.documentElement.outerHTML).replace(/(<html[^>]*?) data-theme="[^"]*"/, "$1");
+
+const $ = id => document.getElementById(id);
+// Chặn đường dẫn nguy hiểm (javascript:, data:...) trong liên kết tài liệu
+const safeUrl = u => /^\s*(javascript|data|vbscript):/i.test(String(u || "")) ? "#" : String(u || "");
+let docs = [];
+try { docs = JSON.parse($("du-lieu").textContent); } catch (e) { docs = []; }
+docs.forEach(d => { d.link = safeUrl(d.link); if (d.linkDapAn) d.linkDapAn = safeUrl(d.linkDapAn); });
+let loaiChon = "tai-lieu";            // "tai-lieu" hoặc "de-thi"
+let nguoiDung = null;
+let lopChon = "";                      // lớp đang chọn ("" = tất cả)
+let chiLuu = false;                    // chỉ hiện mục đã lưu ❤
+let pending = [];                      // file chờ tải về { file, path }
+const loaiCua = d => d.loai || "tai-lieu";
+let cauHoi = [];
+try { cauHoi = JSON.parse($("cau-hoi").textContent); } catch (e) { cauHoi = []; }
+// Dữ liệu của mục đang xem (tài liệu / đề thi / câu hỏi luyện tập)
+const dsMuc = () => loaiChon === "luyen-tap" ? cauHoi : loaiChon === "tien-do" ? [] : docs.filter(d => loaiCua(d) === loaiChon);
+let adminBat = location.hash === "#admin";   // mở khu quản lý bằng index.html#admin
+const laAdmin = () => adminBat;
+
+const boDau = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d").toLowerCase();
+const esc = s => String(s ?? "").replace(/[&<>"']/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+
+/* ===== Bộ lọc & danh sách ===== */
+function taoBoLoc() {
+  const dt = loaiChon === "de-thi";
+  const THU_TU = ["Giữa kì 1", "Cuối kì 1", "Giữa kì 2", "Cuối kì 2", "Thi vào 10"];
+  const viTri = v => { const i = THU_TU.indexOf(v); return i < 0 ? 99 : i; };
+  const cds = [...new Set(dsMuc().map(d => d.chuDe))]
+    .sort((a, b) => viTri(a) - viTri(b) || a.localeCompare(b, "vi"));
+  const giuCD = $("cdSel").value;
+  const dien = (id, tatCa, arr, fmt, giu) => {
+    const el = $(id); el.innerHTML = "";
+    el.add(new Option(tatCa, ""));
+    arr.forEach(v => el.add(new Option(fmt(v), v)));
+    if ([...el.options].some(o => o.value === giu)) el.value = giu;
+  };
+  dien("cdSel", dt ? "Mọi loại đề" : "Mọi chủ đề", cds, v => v, giuCD);
+  veLopTabs();
+}
+
+function veLopTabs() {
+  const trongMuc = dsMuc();
+  const lops = [...new Set([6, 7, 8, 9, ...docs.map(d => d.lop)])].sort((a, b) => a - b);
+  const el = $("lopTabs"); el.innerHTML = "";
+  const them = (v, nhan, n, cls, tip) => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "ltab " + cls + (lopChon === v ? " active" : "") + (n ? "" : " zero");
+    b.setAttribute("aria-pressed", String(lopChon === v));
+    if (tip) b.title = tip;
+    b.innerHTML = esc(nhan) + " <small>" + n + "</small>";
+    b.onclick = () => { lopChon = v; veLopTabs(); ve(); };
+    el.appendChild(b);
+  };
+  them("", "Tất cả", trongMuc.length, "");
+  lops.forEach(l => them(String(l), "Lớp " + l, trongMuc.filter(d => d.lop === l).length, "l" + l, GOI_Y_LOP[l]));
+  if (loaiChon === "tai-lieu" || loaiChon === "de-thi") {
+    const luuSet = layTD().luu;
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "ltab luu" + (chiLuu ? " active" : ""); b.setAttribute("aria-pressed", String(chiLuu));
+    b.innerHTML = "❤ Đã lưu <small>" + trongMuc.filter(d => luuSet.includes(d.link)).length + "</small>";
+    b.onclick = () => { chiLuu = !chiLuu; veLopTabs(); ve(); };
+    el.appendChild(b);
+  }
+}
+
+function doiMuc(loai) {
+  loaiChon = loai;
+  $("secTL").classList.toggle("active", loai === "tai-lieu");
+  $("secDT").classList.toggle("active", loai === "de-thi");
+  $("secLT").classList.toggle("active", loai === "luyen-tap");
+  $("secTD").classList.toggle("active", loai === "tien-do");
+  ["secTL", "secDT", "secLT", "secTD"].forEach(id => $(id).setAttribute("aria-pressed", String($(id).classList.contains("active"))));
+  chiLuu = false;
+  $("cdSel").value = "";
+  taoBoLoc(); ve();
+}
+
+function ve() {
+  const lt = loaiChon === "luyen-tap", td = loaiChon === "tien-do";
+  ["grid", "info", "search", "sort"].forEach(id => { $(id).hidden = lt || td; });
+  $("cdSel").hidden = td; $("lopTabs").hidden = td;
+  $("luyenTap").hidden = !lt; $("tienDo").hidden = !td;
+  if (lt) { veLuyenTap(); return; }
+  if (td) { veTienDo(); return; }
+  const q = boDau($("search").value.trim());
+  const lop = lopChon, cd = $("cdSel").value, sort = $("sort").value;
+  const nhan = loaiChon === "de-thi" ? "đề thi" : "tài liệu";
+  const luuSet = layTD().luu;
+  let ds = docs.filter(d =>
+    loaiCua(d) === loaiChon &&
+    (!chiLuu || luuSet.includes(d.link)) &&
+    (!lop || String(d.lop) === lop) &&
+    (!cd || d.chuDe === cd) &&
+    (!q || boDau(d.tieuDe + " " + (d.moTa || "") + " " + d.chuDe).includes(q))
+  );
+  if (sort === "new") ds.sort((a, b) => (b.ngay || "").localeCompare(a.ngay || ""));
+  if (sort === "lop") ds.sort((a, b) => a.lop - b.lop || a.tieuDe.localeCompare(b.tieuDe, "vi"));
+  if (sort === "ten") ds.sort((a, b) => a.tieuDe.localeCompare(b.tieuDe, "vi"));
+
+  const soKhoa = docs.filter(d => d.thanhVien && loaiCua(d) === loaiChon).length;
+  const info = $("info");
+  info.innerHTML = "<span><b>" + ds.length + "</b> " + nhan + "</span>";
+  if (!nguoiDung && soKhoa) {
+    const s = document.createElement("span");
+    s.innerHTML = "⭐ " + soKhoa + " " + nhan + " dành cho thành viên · <a href='#'>Đăng ký miễn phí</a>";
+    s.querySelector("a").onclick = e => { e.preventDefault(); moHop("reg"); };
+    info.appendChild(s);
+  }
+
+  const grid = $("grid");
+  if (!ds.length) { grid.innerHTML = '<div class="empty">' + (chiLuu ? "♡ Bạn chưa lưu " + nhan + " nào. Bấm ♡ trên thẻ để lưu lại xem sau." : "∅ Không tìm thấy " + nhan + " phù hợp.") + '</div>'; return; }
+  grid.innerHTML = "";
+  ds.forEach(d => {
+    const c = document.createElement("article");
+    c.className = "card l" + esc(d.lop);
+    const ngay = d.ngay ? new Date(d.ngay).toLocaleDateString("vi-VN") : "";
+    const mo = !d.thanhVien || nguoiDung || laAdmin();
+    const daLuu = luuSet.includes(d.link);
+    c.innerHTML = `
+      <button class="heart${daLuu ? " on" : ""}" type="button" aria-pressed="${daLuu}" title="${daLuu ? "Bỏ lưu" : "Lưu để xem lại"}" aria-label="Lưu">${daLuu ? "❤" : "♡"}</button>
+      <div class="tags"><span class="tag fill">Lớp ${esc(d.lop)}</span><span class="tag">${esc(d.chuDe)}</span>${d.thoiGian ? '<span class="tag">⏱ ' + esc(d.thoiGian) + '</span>' : ""}${d.thanhVien ? '<span class="tag vip">⭐</span>' : ""}</div>
+      <h3>${esc(d.tieuDe)}</h3>
+      <p>${esc(d.moTa || "")}</p>
+      <div class="foot"><span>${esc(ngay)}</span><span class="acts">${
+        mo
+          ? (d.linkDapAn ? '<a class="btn sub" href="' + esc(d.linkDapAn) + '" target="_blank" rel="noopener">Đáp án</a>' : "") +
+            '<a class="btn" href="' + esc(d.link) + '" target="_blank" rel="noopener">Xem / Tải</a>'
+          : '<button class="btn khoa" type="button">🔒 Đăng nhập</button>'
+      }${laAdmin() ? '<button class="btn del xoa" type="button">Xóa</button>' : ""}</span></div>`;
+    const kb = c.querySelector(".khoa");
+    if (kb) kb.onclick = () => moHop("login");
+    c.querySelector(".heart").onclick = () => { doiLuuTL(d); veLopTabs(); ve(); };
+    const xb = c.querySelector(".xoa");
+    if (xb) xb.onclick = () => {
+      if (!confirm("Xóa “" + d.tieuDe + "” khỏi danh sách?")) return;
+      pending = pending.filter(p => p.path !== d.link && p.path !== d.linkDapAn);
+      docs.splice(docs.indexOf(d), 1);
+      taoBoLoc(); veCho(); veTrangChu(); ve();
+    };
+    grid.appendChild(c);
+  });
+}
+
+$("secTL").onclick = () => doiMuc("tai-lieu");
+$("secDT").onclick = () => doiMuc("de-thi");
+$("secLT").onclick = () => doiMuc("luyen-tap");
+$("secTD").onclick = () => doiMuc("tien-do");
+["input", "change"].forEach(ev => {
+  $("search").addEventListener(ev, ve);
+  ["cdSel", "sort"].forEach(id => $(id).addEventListener(ev, ve));
+});
+
+/* ===== Tiến độ học tập (lưu trên trình duyệt, riêng theo tài khoản) ===== */
+const TD = "toan_tiendo";
+const khoaNguoi = () => nguoiDung ? "u:" + nguoiDung.email : "khach";
+const dangNgay = x => x.getFullYear() + "-" + String(x.getMonth() + 1).padStart(2, "0") + "-" + String(x.getDate()).padStart(2, "0");
+const homNay = () => dangNgay(new Date());
+function layTD() {
+  const d = lay(TD, {})[khoaNguoi()] || {};
+  return Object.assign({lichSu: [], sai: [], danhDau: [], luu: [], ngayHoc: [], tk: {}, thuThach: null}, d);
+}
+function luuTD(d) { const all = lay(TD, {}); all[khoaNguoi()] = d; luu(TD, all); }
+const qid = q => {
+  let h = 5381; const s = String(q.cauHoi);
+  for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0;
+  return (h >>> 0).toString(36);
+};
+function danhDauNgay(d) { const h = homNay(); if (!d.ngayHoc.includes(h)) d.ngayHoc = [...d.ngayHoc, h].slice(-120); }
+function chuoiNgay(d) {
+  const set = new Set(d.ngayHoc), c = new Date(); let n = 0;
+  if (!set.has(dangNgay(c))) c.setDate(c.getDate() - 1);   // hôm nay chưa học vẫn giữ chuỗi nếu hôm qua có học
+  while (set.has(dangNgay(c))) { n++; c.setDate(c.getDate() - 1); }
+  return n;
+}
+function ghiKetQua(arr) {   // arr: [{q, dung}] – cập nhật thống kê, ngân hàng câu sai, ngày học
+  const d = layTD();
+  arr.forEach(({q, dung}) => {
+    const k = q.lop + "|" + q.chuDe;
+    const t = d.tk[k] || (d.tk[k] = {dung: 0, tong: 0});
+    t.tong++; if (dung) t.dung++;
+    const id = qid(q), i = d.sai.indexOf(id);
+    if (dung) { if (i >= 0) d.sai.splice(i, 1); } else if (i < 0) d.sai.push(id);
+  });
+  danhDauNgay(d); luuTD(d);
+}
+function doiDanhDau(q) {
+  const d = layTD(), id = qid(q), i = d.danhDau.indexOf(id);
+  if (i >= 0) d.danhDau.splice(i, 1); else d.danhDau.push(id);
+  luuTD(d);
+}
+const laDanhDau = q => layTD().danhDau.includes(qid(q));
+function doiLuuTL(d0) {
+  const d = layTD(), i = d.luu.indexOf(d0.link);
+  if (i >= 0) d.luu.splice(i, 1); else d.luu.push(d0.link);
+  luuTD(d);
+}
+
+/* ===== Luyện tập trắc nghiệm ===== */
+let luyen = {phase: "cho", che: "luyen", khoa: "", ds: [], i: 0, chon: [], t0: 0, han: 0, conLai: 0, timer: null, giay: 0, hetGio: false};
+let cheChon = "luyen";
+const LTR = "ABCD";
+const CHE = {
+  "luyen":    {ten: "✍️ Luyện tập",       mota: "Có giải thích ngay sau mỗi câu"},
+  "thi":      {ten: "⏱ Thi bấm giờ",     mota: "Làm hết rồi mới chấm, tính giờ như thi thật"},
+  "on-sai":   {ten: "🔁 Ôn câu từng sai", mota: "Chỉ gồm các câu bạn từng làm sai"},
+  "danh-dau": {ten: "⭐ Câu đã đánh dấu", mota: "Các câu bạn đánh dấu để xem lại"}
+};
+const tronMang = a => {
+  a = a.slice();
+  for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+  return a;
+};
+const cauLoc = () => {
+  const cd = $("cdSel").value;
+  return cauHoi.filter(q => (!lopChon || String(q.lop) === lopChon) && (!cd || q.chuDe === cd));
+};
+function nguonCau(che) {
+  const ds = cauLoc();
+  if (che === "on-sai") { const s = layTD().sai; return ds.filter(q => s.includes(qid(q))); }
+  if (che === "danh-dau") { const s = layTD().danhDau; return ds.filter(q => s.includes(qid(q))); }
+  return ds;
+}
+const chuanBi = q => ({goc: q, lop: q.lop, chuDe: q.chuDe,
+  ops: tronMang(q.dapAn.map((t, i) => ({t, dung: i === q.dung})))});
+const kiemDung = (q, c) => c !== null && c !== undefined && q.ops[c].dung;
+const dinhDangGio = s => { s = Math.max(0, s); return String(Math.floor(s / 60)).padStart(2, "0") + ":" + String(s % 60).padStart(2, "0"); };
+
+function batDau(che, qs, gmc) {
+  clearInterval(luyen.timer);
+  const ds = qs.map(chuanBi);
+  luyen = {phase: "lam", che, khoa: lopChon + "|" + $("cdSel").value, ds, i: 0, chon: ds.map(() => null),
+    t0: Date.now(), han: Date.now() + gmc * ds.length * 1000, conLai: gmc * ds.length, timer: null, giay: 0, hetGio: false};
+  if (che === "thi") luyen.timer = setInterval(tick, 500);
+  veLuyenTap();
+}
+function tick() {
+  if (luyen.phase !== "lam" || luyen.che !== "thi") { clearInterval(luyen.timer); return; }
+  luyen.conLai = Math.round((luyen.han - Date.now()) / 1000);
+  const el = $("ltTime");
+  if (el) { el.textContent = "⏱ " + dinhDangGio(luyen.conLai); el.classList.toggle("gap", luyen.conLai <= 30); }
+  if (luyen.conLai <= 0) { luyen.hetGio = true; ketThuc(); }
+}
+function thoatBai() { clearInterval(luyen.timer); luyen.phase = "cho"; veLuyenTap(); }
+
+function ketThuc() {
+  clearInterval(luyen.timer);
+  luyen.giay = Math.round((Date.now() - luyen.t0) / 1000);
+  const dung = luyen.ds.filter((q, k) => kiemDung(q, luyen.chon[k])).length;
+  if (luyen.che === "thi") ghiKetQua(luyen.ds.map((q, k) => ({q: q.goc, dung: !!kiemDung(q, luyen.chon[k])})));
+  const d = layTD(), kh = luyen.khoa.split("|");
+  d.lichSu.unshift({t: Date.now(), lop: kh[0], cd: kh[1] || "", che: luyen.che, dung, tong: luyen.ds.length, giay: luyen.giay});
+  d.lichSu = d.lichSu.slice(0, 40);
+  danhDauNgay(d); luuTD(d);
+  luyen.phase = "xong";
+  thongBao("Kết quả: " + dung + " trên " + luyen.ds.length + " câu đúng");
+  veLuyenTap();
+}
+
+function veLuyenTap() {
+  const khoa = lopChon + "|" + $("cdSel").value;
+  if (luyen.phase === "xong" && luyen.khoa !== khoa) luyen.phase = "cho";   // đổi lớp/chủ đề sau khi xong = làm bài mới
+  const el = $("luyenTap");
+  if (luyen.phase === "cho") return veLTCho(el);
+  if (luyen.phase === "lam") return luyen.che === "thi" ? veLTThi(el) : veLTLam(el);
+  veLTXong(el);
+}
+
+function veLTCho(el) {
+  const cd = $("cdSel").value;
+  const ph = (lopChon ? "Lớp " + lopChon : "Mọi lớp") + " · " + (cd || "Mọi chủ đề");
+  if (!cauLoc().length) {
+    el.innerHTML = '<div class="lt-box"><h3>✍️ Luyện tập trắc nghiệm</h3><p>Chưa có câu hỏi cho <b>' + esc(ph) + '</b>. Bạn chọn lớp hoặc chủ đề khác nhé.</p></div>';
+    return;
+  }
+  const so = {}; Object.keys(CHE).forEach(k => { so[k] = nguonCau(k).length; });
+  if (!so[cheChon]) cheChon = "luyen";
+  const n = so[cheChon], macDinh = n > 10 ? 10 : n;
+  const opts = [5, 10, 20].filter(x => x < n);
+  const modes = Object.keys(CHE).map(k =>
+    `<button class="mode${k === cheChon ? " active" : ""}" type="button" aria-pressed="${k === cheChon}" data-che="${k}"${so[k] ? "" : " disabled"}><b>${CHE[k].ten}</b><small>${CHE[k].mota}</small><i>${so[k]} câu</i></button>`).join("");
+  el.innerHTML = `<div class="lt-box"><h3>✍️ Luyện tập trắc nghiệm</h3>
+    <p class="lt-ph">Đang chọn: <b>${esc(ph)}</b>. Chọn chế độ rồi bấm bắt đầu.</p>
+    <div class="modes">${modes}</div>
+    <label>Số câu: <select id="ltSo">${opts.map(x => `<option value="${x}"${x === macDinh ? " selected" : ""}>${x} câu</option>`).join("")}<option value="${n}"${n === macDinh ? " selected" : ""}>Tất cả (${n} câu)</option></select></label>
+    ${cheChon === "thi" ? '<label>Thời gian: <select id="ltGiay"><option value="45">45 giây/câu</option><option value="60" selected>60 giây/câu</option><option value="90">90 giây/câu</option></select></label>' : ""}
+    <div class="lt-acts"><button class="btn big" id="ltBat" type="button">▶ Bắt đầu</button></div>
+    <p style="margin:12px 0 0;font-size:.8rem">💡 Mẹo: bấm phím A–D (hoặc 1–4) để chọn đáp án, Enter để sang câu tiếp.</p></div>`;
+  el.querySelectorAll(".mode").forEach(b => { b.onclick = () => { cheChon = b.dataset.che; veLTCho(el); }; });
+  $("ltBat").onclick = () => {
+    const ds = tronMang(nguonCau(cheChon)).slice(0, Number($("ltSo").value));
+    batDau(cheChon, ds, $("ltGiay") ? Number($("ltGiay").value) : 0);
+  };
+}
+
+/* Chế độ có giải thích ngay sau mỗi câu */
+function veLTLam(el) {
+  const i = luyen.i, q = luyen.ds[i], n = luyen.ds.length, c = luyen.chon[i], xong = c !== null;
+  const diem = luyen.ds.filter((x, k) => kiemDung(x, luyen.chon[k])).length;
+  const ops = q.ops.map((o, k) => {
+    let cls = "opt";
+    if (xong) { if (o.dung) cls += " ok"; else if (k === c) cls += " bad"; }
+    return `<button class="${cls}" type="button" data-k="${k}"${xong ? " disabled" : ""}><span class="ltr">${LTR[k]}</span><span>${esc(o.t)}</span></button>`;
+  }).join("");
+  let gt = "";
+  if (xong) {
+    const dung = q.ops[c].dung;
+    gt = `<div class="gt ${dung ? "ok" : "bad"}"><b>${dung ? "🎉 Chính xác!" : "❌ Chưa đúng."}</b>${dung ? "" : " Đáp án đúng: " + esc(q.goc.dapAn[q.goc.dung]) + "."}${q.goc.giaiThich ? "<br>" + esc(q.goc.giaiThich) : ""}</div>`;
+  }
+  const lanCuoi = i === n - 1, dd = laDanhDau(q.goc);
+  el.innerHTML = `<div class="lt-box">
+    <div class="lt-top"><span>${CHE[luyen.che].ten} · Câu <b>${i + 1}</b>/${n} · ✅ ${diem}</span>
+      <span class="right"><button class="mini${dd ? " on" : ""}" id="ltDau" type="button" aria-pressed="${dd}">${dd ? "⭐ Đã đánh dấu" : "☆ Đánh dấu"}</button><button class="mini" id="ltThoat" type="button">✕ Thoát</button></span></div>
+    <div class="pg"><i style="width:${(i + (xong ? 1 : 0)) / n * 100}%"></i></div>
+    <div class="lt-tags l${esc(q.lop)}"><span class="tag fill">Lớp ${esc(q.lop)}</span><span class="tag">${esc(q.chuDe)}</span></div>
+    <div class="lt-q" tabindex="-1">${esc(q.goc.cauHoi)}</div>
+    <div class="opts">${ops}</div>${gt}
+    <div class="lt-acts">${xong ? `<button class="btn big" id="ltTiep" type="button">${lanCuoi ? "Xem kết quả" : "Câu tiếp →"}</button>` : ""}${laAdmin() ? '<button class="btn del" id="ltXoa" type="button">🗑 Xóa câu này</button>' : ""}</div>
+  </div>`;
+  el.querySelectorAll(".opt").forEach(b => { b.onclick = () => {
+    if (luyen.chon[i] !== null) return;
+    luyen.chon[i] = Number(b.dataset.k);
+    ghiKetQua([{q: q.goc, dung: !!q.ops[luyen.chon[i]].dung}]);
+    thongBao(q.ops[luyen.chon[i]].dung ? "Chính xác" : "Chưa đúng. Đáp án đúng: " + q.goc.dapAn[q.goc.dung]);
+    veLuyenTap();
+    const tn = $("ltTiep"); if (tn) tn.focus();
+  }; });
+  const tiep = $("ltTiep");
+  if (tiep) tiep.onclick = () => { if (lanCuoi) ketThuc(); else { luyen.i++; veLuyenTap(); focusCau(); } };
+  $("ltDau").onclick = () => { doiDanhDau(q.goc); veLuyenTap(); };
+  $("ltThoat").onclick = () => { if (confirm("Thoát bài đang làm? Kết quả bài này sẽ không được ghi vào lịch sử.")) thoatBai(); };
+  const xoa = $("ltXoa");
+  if (xoa) xoa.onclick = () => xoaCauDangLam(q);
+}
+
+/* Chế độ thi bấm giờ: làm hết rồi mới chấm */
+function veLTThi(el) {
+  const i = luyen.i, q = luyen.ds[i], n = luyen.ds.length, c = luyen.chon[i];
+  const lam = luyen.chon.filter(x => x !== null).length;
+  const nav = luyen.ds.map((x, k) =>
+    `<button type="button" data-go="${k}" class="${luyen.chon[k] !== null ? "done " : ""}${k === i ? "cur" : ""}" aria-label="Câu ${k + 1}">${k + 1}</button>`).join("");
+  const ops = q.ops.map((o, k) =>
+    `<button class="opt${k === c ? " sel" : ""}" type="button" data-k="${k}"><span class="ltr">${LTR[k]}</span><span>${esc(o.t)}</span></button>`).join("");
+  const dd = laDanhDau(q.goc);
+  el.innerHTML = `<div class="lt-box">
+    <div class="lt-top"><span>${CHE.thi.ten} · Câu <b>${i + 1}</b>/${n} · đã làm ${lam}/${n}</span>
+      <span class="right"><span class="timer${luyen.conLai <= 30 ? " gap" : ""}" id="ltTime">⏱ ${dinhDangGio(luyen.conLai)}</span><button class="mini${dd ? " on" : ""}" id="ltDau" type="button" aria-pressed="${dd}">${dd ? "⭐" : "☆"}</button><button class="mini" id="ltThoat" type="button">✕ Thoát</button></span></div>
+    <div class="qnav">${nav}</div>
+    <div class="lt-tags l${esc(q.lop)}"><span class="tag fill">Lớp ${esc(q.lop)}</span><span class="tag">${esc(q.chuDe)}</span></div>
+    <div class="lt-q" tabindex="-1">${esc(q.goc.cauHoi)}</div>
+    <div class="opts">${ops}</div>
+    <div class="lt-acts"><button class="btn big sub" id="ltTruoc" type="button"${i === 0 ? " disabled" : ""}>← Câu trước</button><button class="btn big" id="ltSau" type="button"${i === n - 1 ? " disabled" : ""}>Câu sau →</button><button class="btn big ok" id="ltNop" type="button">📤 Nộp bài</button></div>
+  </div>`;
+  el.querySelectorAll(".opt").forEach(b => { b.onclick = () => {
+    const k = Number(b.dataset.k);
+    luyen.chon[i] = luyen.chon[i] === k ? null : k;   // bấm lại để bỏ chọn
+    veLuyenTap();
+    const nb = document.querySelectorAll("#luyenTap .opt")[k]; if (nb) nb.focus();
+  }; });
+  el.querySelectorAll("[data-go]").forEach(b => { b.onclick = () => { luyen.i = Number(b.dataset.go); veLuyenTap(); focusCau(); }; });
+  $("ltTruoc").onclick = () => { if (luyen.i > 0) { luyen.i--; veLuyenTap(); focusCau(); } };
+  $("ltSau").onclick = () => { if (luyen.i < n - 1) { luyen.i++; veLuyenTap(); focusCau(); } };
+  $("ltDau").onclick = () => { doiDanhDau(q.goc); veLuyenTap(); };
+  $("ltThoat").onclick = () => { if (confirm("Thoát bài thi? Bài làm sẽ không được chấm.")) thoatBai(); };
+  $("ltNop").onclick = () => {
+    const con = n - luyen.chon.filter(x => x !== null).length;
+    if (!con || confirm("Bạn còn " + con + " câu chưa làm. Vẫn nộp bài?")) ketThuc();
+  };
+}
+
+function xoaCauDangLam(q) {
+  if (!confirm("Xóa câu hỏi này khỏi danh sách?")) return;
+  const i = luyen.ds.indexOf(q);
+  cauHoi.splice(cauHoi.indexOf(q.goc), 1);
+  luyen.ds.splice(i, 1); luyen.chon.splice(i, 1);
+  taoBoLoc(); veTrangChu();
+  if (!luyen.ds.length) luyen.phase = "cho";
+  else if (luyen.i >= luyen.ds.length) { ketThuc(); return; }
+  veLuyenTap();
+}
+
+function veLTXong(el) {
+  const n = luyen.ds.length, thi = luyen.che === "thi";
+  const dung = luyen.ds.filter((q, k) => kiemDung(q, luyen.chon[k])).length;
+  const pct = Math.round(dung / n * 100);
+  const loi = pct === 100 ? "Tuyệt vời! Bạn làm đúng hết 🎉"
+    : pct >= 80 ? "Rất tốt! Chỉ còn vài chỗ cần ôn lại 👍"
+    : pct >= 50 ? "Khá ổn, ôn lại các câu sai rồi thử lại nhé 💪"
+    : "Đừng nản, xem lại lý thuyết rồi luyện lại nhé 📚";
+  const hien = luyen.ds.map((q, k) => ({q, k})).filter(({q, k}) => thi || !kiemDung(q, luyen.chon[k]));
+  const rv = hien.map(({q, k}) => {
+    const c = luyen.chon[k], ok = !!kiemDung(q, c);
+    const trangThai = c === null ? "⚪ Chưa trả lời" : (ok ? "✅ Đúng" : "❌ Sai · bạn chọn: " + q.ops[c].t);
+    return `<div class="gt ${c === null ? "" : (ok ? "ok" : "bad")}"><b>Câu ${k + 1}. ${esc(q.goc.cauHoi)}</b><br>${esc(trangThai)}${ok ? "" : "<br>Đáp án đúng: " + esc(q.goc.dapAn[q.goc.dung])}${q.goc.giaiThich ? "<br>" + esc(q.goc.giaiThich) : ""}</div>`;
+  }).join("");
+  const sai = luyen.ds.filter((q, k) => !kiemDung(q, luyen.chon[k])).map(q => q.goc);
+  el.innerHTML = `<div class="lt-box lt-kq"><h3>Kết quả${luyen.hetGio ? " · hết giờ ⏰" : ""}</h3>
+    <div class="diem">${dung}<small>/${n}</small></div><p>${pct}% · ${esc(loi)} · ⏱ ${dinhDangGio(luyen.giay)}</p>
+    ${hien.length ? "<h4>" + (thi ? "Xem lại bài làm" : "Các câu cần ôn lại") + "</h4>" + rv : ""}
+    <div class="lt-acts">${sai.length ? '<button class="btn big" id="ltLai" type="button">🔁 Làm lại câu sai</button>' : ""}<button class="btn big ok" id="ltMoi" type="button">🔄 Luyện tập mới</button><button class="btn big sub" id="ltTD" type="button">📊 Xem tiến độ</button></div></div>`;
+  const lai = $("ltLai");
+  if (lai) lai.onclick = () => { cheChon = "luyen"; batDau("luyen", sai, 0); };
+  $("ltMoi").onclick = () => { luyen.phase = "cho"; veLuyenTap(); };
+  $("ltTD").onclick = () => doiMuc("tien-do");
+}
+
+// Phím tắt: A–D / 1–4 chọn đáp án, Enter hoặc → sang câu tiếp, ← về câu trước
+document.addEventListener("keydown", e => {
+  if (loaiChon !== "luyen-tap" || luyen.phase !== "lam") return;
+  if (/^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName) || e.ctrlKey || e.metaKey || e.altKey) return;
+  if (!$("overlay").hidden) return;
+  const k = e.key.toLowerCase();
+  const idx = "abcd".indexOf(k) >= 0 ? "abcd".indexOf(k) : "1234".indexOf(k);
+  if (k.length === 1 && idx >= 0) {
+    const b = document.querySelectorAll("#luyenTap .opt")[idx];
+    if (b && !b.disabled) { e.preventDefault(); b.click(); }
+  } else if (k === "enter" && e.target.tagName === "BUTTON") {
+    return;   // để nút đang focus tự xử lý
+  } else if (k === "enter" || k === "arrowright") {
+    const t = $("ltTiep") || $("ltSau");
+    if (t && !t.disabled) { e.preventDefault(); t.click(); }
+  } else if (k === "arrowleft") {
+    const t = $("ltTruoc");
+    if (t && !t.disabled) { e.preventDefault(); t.click(); }
+  }
+});
+
+/* ===== Trang tiến độ ===== */
+function veTienDo() {
+  const d = layTD(), el = $("tienDo");
+  const tk = Object.entries(d.tk);
+  const tong = tk.reduce((a, [, t]) => a + t.tong, 0), dungT = tk.reduce((a, [, t]) => a + t.dung, 0);
+  const pct = tong ? Math.round(dungT / tong * 100) : 0;
+  const caiSai = cauHoi.filter(q => d.sai.includes(qid(q))).length;
+  const tiles = [[chuoiNgay(d) + " 🔥", "ngày học liên tiếp"], [tong, "câu đã làm"], [pct + "%", "chính xác"], [caiSai, "câu cần ôn"], [d.lichSu.length, "bài đã nộp"]]
+    .map(([a, b]) => `<div class="tile"><b>${a}</b><span>${b}</span></div>`).join("");
+  const bars = tk.map(([k, t]) => { const p = k.split("|"); return {lop: p[0], cd: p[1] || "", t}; })
+    .sort((a, b) => a.lop - b.lop || a.cd.localeCompare(b.cd, "vi"))
+    .map(({lop, cd, t}) => { const p = Math.round(t.dung / t.tong * 100);
+      return `<div class="pbar-row"><span>Lớp ${esc(lop)} · ${esc(cd)}</span><div class="pbar l${esc(lop)}"><i style="width:${p}%"></i></div><b>${p}% <small>(${t.dung}/${t.tong})</small></b></div>`; }).join("");
+  const hist = d.lichSu.slice(0, 8).map(h => {
+    const ngay = new Date(h.t).toLocaleDateString("vi-VN") + " " + new Date(h.t).toLocaleTimeString("vi-VN", {hour: "2-digit", minute: "2-digit"});
+    return `<div class="hist-row"><span>${esc(ngay)} · ${esc((CHE[h.che] || CHE.luyen).ten)}</span><span>${h.lop ? "Lớp " + esc(h.lop) : "Mọi lớp"} · ${esc(h.cd || "Mọi chủ đề")}</span><b>${h.dung}/${h.tong} · ⏱ ${dinhDangGio(h.giay)}</b></div>`;
+  }).join("");
+  const luuDs = docs.filter(x => d.luu.includes(x.link));
+  el.innerHTML = `
+    ${nguoiDung ? "" : '<p class="note-td">Bạn đang dùng với tư cách khách. <a href="#" id="tdDangNhap">Đăng nhập</a> để lưu tiến độ riêng cho tài khoản của bạn.</p>'}
+    <div class="tiles">${tiles}</div>
+    <div class="box"><h3>📈 Độ chính xác theo chủ đề</h3>${bars || '<p class="note-td">Chưa có dữ liệu. Hãy làm vài câu ở mục Luyện tập nhé.</p>'}</div>
+    <div class="box"><h3>🕘 Lịch sử gần đây</h3>${hist || '<p class="note-td">Chưa có bài nào được nộp.</p>'}</div>
+    <div class="box"><h3>❤ Tài liệu đã lưu</h3>${luuDs.length ? '<div class="moi-list" id="tdLuu"></div>' : '<p class="note-td">Bấm ♡ trên thẻ tài liệu hoặc đề thi để lưu lại xem sau.</p>'}</div>
+    <div class="lt-acts"><button class="btn big" id="tdOn" type="button"${caiSai ? "" : " disabled"}>🔁 Ôn lại câu sai (${caiSai})</button><button class="btn big sub" id="tdLuyen" type="button">✍️ Luyện tập</button><button class="btn del" id="tdXoa" type="button">🗑 Xóa dữ liệu tiến độ</button></div>`;
+  const box = $("tdLuu");
+  if (box) luuDs.forEach(x => {
+    const mo = !x.thanhVien || nguoiDung || laAdmin();
+    const a = document.createElement("div");
+    a.className = "moi-item l" + esc(x.lop);
+    a.innerHTML = `<span><b>${esc(x.tieuDe)}</b><small>Lớp ${esc(x.lop)} · ${loaiCua(x) === "de-thi" ? "Đề thi" : "Tài liệu"}</small></span>` +
+      (mo ? `<a class="btn" href="${esc(x.link)}" target="_blank" rel="noopener">Xem</a>` : '<button class="btn khoa" type="button">🔒</button>');
+    const kb = a.querySelector(".khoa"); if (kb) kb.onclick = () => moHop("login");
+    box.appendChild(a);
+  });
+  const dn = $("tdDangNhap"); if (dn) dn.onclick = e => { e.preventDefault(); moHop("login"); };
+  $("tdOn").onclick = () => { cheChon = "on-sai"; lopChon = ""; luyen.phase = "cho"; doiMuc("luyen-tap"); };
+  $("tdLuyen").onclick = () => { luyen.phase = "cho"; doiMuc("luyen-tap"); };
+  $("tdXoa").onclick = () => {
+    if (!confirm("Xóa toàn bộ tiến độ, lịch sử, câu sai, câu đánh dấu và tài liệu đã lưu của tài khoản này?")) return;
+    const all = lay(TD, {}); delete all[khoaNguoi()]; luu(TD, all);
+    veThuThach(); veLopTabs(); veTienDo();
+  };
+}
+
+/* ===== Thử thách mỗi ngày ===== */
+function cauHomNay() {
+  if (!cauHoi.length) return null;
+  let h = 7; for (const ch of homNay()) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+  return cauHoi[h % cauHoi.length];
+}
+function veThuThach() {
+  const el = $("thuThach"), q = cauHomNay(), d = layTD();
+  const head = `<h2>🎯 Thử thách hôm nay<span class="streak">🔥 ${chuoiNgay(d)} ngày</span></h2>`;
+  if (!q) { el.innerHTML = head + "<p>Chưa có câu hỏi nào.</p>"; return; }
+  const tt = d.thuThach && d.thuThach.ngay === homNay() && d.thuThach.id === qid(q) ? d.thuThach : null;
+  const ops = q.dapAn.map((t, k) => {
+    let cls = "opt";
+    if (tt) { if (k === q.dung) cls += " ok"; else if (k === tt.chon) cls += " bad"; }
+    return `<button class="${cls}" type="button" data-k="${k}"${tt ? " disabled" : ""}><span class="ltr">${LTR[k]}</span><span>${esc(t)}</span></button>`;
+  }).join("");
+  const gt = tt ? `<div class="gt ${tt.chon === q.dung ? "ok" : "bad"}"><b>${tt.chon === q.dung ? "🎉 Chính xác!" : "❌ Chưa đúng."}</b>${tt.chon === q.dung ? "" : " Đáp án đúng: " + esc(q.dapAn[q.dung]) + "."}${q.giaiThich ? "<br>" + esc(q.giaiThich) : ""}</div>
+    <div class="lt-acts"><button class="btn" id="ttThem" type="button">Luyện thêm →</button></div>` : "";
+  el.innerHTML = head + `<div class="lt-tags l${esc(q.lop)}"><span class="tag fill">Lớp ${esc(q.lop)}</span><span class="tag">${esc(q.chuDe)}</span></div>
+    <div class="tt-q">${esc(q.cauHoi)}</div><div class="tt-opts">${ops}</div>${gt}`;
+  el.querySelectorAll(".opt").forEach(b => { b.onclick = () => {
+    if (tt) return;
+    const k = Number(b.dataset.k);
+    ghiKetQua([{q, dung: k === q.dung}]);
+    thongBao(k === q.dung ? "Chính xác" : "Chưa đúng. Đáp án đúng: " + q.dapAn[q.dung]);
+    const d2 = layTD(); d2.thuThach = {ngay: homNay(), id: qid(q), chon: k}; luuTD(d2);
+    veThuThach();
+  }; });
+  const them = $("ttThem");
+  if (them) them.onclick = () => { lopChon = String(q.lop); luyen.phase = "cho"; doiMuc("luyen-tap"); $("thu-vien").scrollIntoView({behavior: "smooth"}); };
+}
+
+/* ===== Mới đăng ===== */
+function veMoi() {
+  const el = $("moiDang");
+  const ds = docs.slice().sort((a, b) => (b.ngay || "").localeCompare(a.ngay || "")).slice(0, 4);
+  el.innerHTML = "<h2>🆕 Mới đăng</h2>" + (ds.length ? '<div class="moi-list"></div>' : "<p>Chưa có tài liệu nào.</p>");
+  const box = el.querySelector(".moi-list"); if (!box) return;
+  ds.forEach(x => {
+    const mo = !x.thanhVien || nguoiDung || laAdmin();
+    const a = document.createElement("div");
+    a.className = "moi-item l" + esc(x.lop);
+    a.innerHTML = `<span><b>${esc(x.tieuDe)}</b><small>Lớp ${esc(x.lop)} · ${loaiCua(x) === "de-thi" ? "Đề thi" : "Tài liệu"} · ${esc(x.chuDe)}${x.thanhVien ? " · ⭐" : ""}</small></span>` +
+      (mo ? `<a class="btn" href="${esc(x.link)}" target="_blank" rel="noopener">Xem</a>` : '<button class="btn khoa" type="button">🔒</button>');
+    const kb = a.querySelector(".khoa"); if (kb) kb.onclick = () => moHop("login");
+    box.appendChild(a);
+  });
+}
+
+/* ===== Tài khoản (bản thử nghiệm: lưu trong trình duyệt) ===== */
+const KHO = "toan_users", PHIEN = "toan_session";
+const lay = (k, m) => { try { const v = JSON.parse(localStorage.getItem(k)); return v ?? m; } catch { return m; } };
+const luu = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} };
+async function bam(s) {
+  if (window.crypto && crypto.subtle) {
+    const b = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(s));
+    return [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, "0")).join("");
+  }
+  return btoa(unescape(encodeURIComponent(s)));
+}
+nguoiDung = lay(PHIEN, null);
+let cheDo = "login";
+
+function veAuthBar() {
+  const el = $("authbar"); el.innerHTML = "";
+  if (nguoiDung) {
+    const s = document.createElement("span"); s.textContent = "👋 " + nguoiDung.ten;
+    const b = document.createElement("button"); b.className = "abtn"; b.textContent = "Đăng xuất";
+    b.onclick = () => { nguoiDung = null; luu(PHIEN, null); lamMoiTatCa(); };
+    el.append(s, b);
+  } else {
+    const a = document.createElement("button"); a.className = "abtn"; a.textContent = "Đăng nhập"; a.onclick = () => moHop("login");
+    const b = document.createElement("button"); b.className = "abtn solid"; b.textContent = "Đăng ký"; b.onclick = () => moHop("reg");
+    el.append(a, b);
+  }
+}
+let truocModal = null;
+function moHop(che) {
+  if ($("overlay").hidden) truocModal = document.activeElement;
+  cheDo = che; const reg = che === "reg";
+  $("tabLogin").classList.toggle("active", !reg);
+  $("tabReg").classList.toggle("active", reg);
+  $("rowTen").hidden = !reg; $("rowMk2").hidden = !reg;
+  $("submitBtn").textContent = reg ? "Tạo tài khoản" : "Đăng nhập";
+  $("fMk").autocomplete = reg ? "new-password" : "current-password";
+  $("msg").textContent = ""; $("overlay").hidden = false;
+  $(reg ? "fTen" : "fEmail").focus();
+}
+function dongHop() { $("overlay").hidden = true; $("authForm").reset(); if (truocModal && truocModal.focus && document.contains(truocModal)) truocModal.focus(); }
+const bao = t => { $("msg").textContent = t; };
+
+$("tabLogin").onclick = () => moHop("login");
+$("tabReg").onclick = () => moHop("reg");
+$("mClose").onclick = dongHop;
+$("overlay").addEventListener("click", e => { if (e.target.id === "overlay") dongHop(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") dongHop(); });
+
+$("authForm").addEventListener("submit", async e => {
+  e.preventDefault();
+  const email = $("fEmail").value.trim().toLowerCase();
+  const mk = $("fMk").value;
+  const users = lay(KHO, []);
+  if (mk.length < 6) return bao("Mật khẩu cần ít nhất 6 ký tự.");
+  const h = await bam(mk);
+  if (cheDo === "reg") {
+    const ten = $("fTen").value.trim();
+    if (!ten) return bao("Bạn nhập tên giúp mình nhé.");
+    if (mk !== $("fMk2").value) return bao("Hai mật khẩu chưa giống nhau.");
+    if (users.some(u => u.email === email)) return bao("Email này đã được đăng ký.");
+    users.push({ ten, email, mk: h }); luu(KHO, users);
+    nguoiDung = { ten, email };
+  } else {
+    const u = users.find(u => u.email === email && u.mk === h);
+    if (!u) return bao("Email hoặc mật khẩu chưa đúng.");
+    nguoiDung = { ten: u.ten, email: u.email };
+  }
+  luu(PHIEN, nguoiDung);
+  dongHop(); lamMoiTatCa();
+});
+
+/* ===== Khu quản lý (index.html#admin) ===== */
+const slug = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d").replace(/Đ/g, "D")
+  .toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "tai-lieu";
+
+function aDoiLoai() {
+  const dt = $("aLoai").value === "de-thi";
+  $("aBoxTG").hidden = !dt; $("aBoxDA").hidden = !dt;
+  $("aLblCD").textContent = dt ? "Loại đề (Giữa kì 1, Thi vào 10…)" : "Chủ đề";
+  $("aLblFile").textContent = dt ? "File đề thi" : "File tài liệu (PDF, Word…)";
+  const cds = [...new Set(docs.filter(d => loaiCua(d) === $("aLoai").value).map(d => d.chuDe))];
+  $("aDsCD").innerHTML = cds.map(c => `<option value="${esc(c)}">`).join("");
+}
+$("aLoai").onchange = aDoiLoai;
+
+function duongDan(loai, lop, tieuDe, hauTo, file) {
+  const m = file.name.match(/\.[a-z0-9]+$/i);
+  const ext = m ? m[0].toLowerCase() : ".pdf";
+  const dir = loai === "de-thi" ? "de-thi" : "tai-lieu";
+  const base = `${dir}/lop${lop}-${slug(tieuDe)}${hauTo}`;
+  const dung = new Set([...docs.flatMap(d => [d.link, d.linkDapAn]), ...pending.map(x => x.path)]);
+  let p = base + ext, i = 2;
+  while (dung.has(p)) p = `${base}-${i++}${ext}`;
+  return p;
+}
+
+function veCho() {
+  const el = $("aCho");
+  el.hidden = !pending.length;
+  el.innerHTML = "<b>File chờ tải về:</b><br>" + pending.map(p =>
+    `${esc(p.file.name)} → <code>${esc(p.path)}</code>`).join("<br>");
+  $("aTomTat").textContent = pending.length ? pending.length + " file đang chờ." : "";
+}
+
+$("aForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const loai = $("aLoai").value, dt = loai === "de-thi";
+  const tieuDe = $("aTitle").value.trim(), lop = Number($("aLop").value);
+  const f = $("aFile").files[0], link = $("aLink").value.trim();
+  const am = t => { $("aMsg").textContent = t; };
+  if (!f && !link) return am("Hãy chọn file hoặc dán link tài liệu.");
+  am("");
+
+  const item = {};
+  if (dt) item.loai = "de-thi";
+  item.tieuDe = tieuDe; item.lop = lop; item.chuDe = $("aCD").value.trim();
+  if (dt && $("aTG").value.trim()) item.thoiGian = $("aTG").value.trim();
+  if ($("aMoTa").value.trim()) item.moTa = $("aMoTa").value.trim();
+  if (f) { const p = duongDan(loai, lop, tieuDe, "", f); pending.push({file: f, path: p}); item.link = p; }
+  else item.link = link;
+  if (dt) {
+    const fd = $("aFileDA").files[0], ld = $("aLinkDA").value.trim();
+    if (fd) { const p = duongDan(loai, lop, tieuDe, "-dap-an", fd); pending.push({file: fd, path: p}); item.linkDapAn = p; }
+    else if (ld) item.linkDapAn = ld;
+  }
+  const h = new Date();
+  item.ngay = h.getFullYear() + "-" + String(h.getMonth() + 1).padStart(2, "0") + "-" + String(h.getDate()).padStart(2, "0");
+  if ($("aTV").checked) item.thanhVien = true;
+
+  item.link = safeUrl(item.link); if (item.linkDapAn) item.linkDapAn = safeUrl(item.linkDapAn);
+  docs.push(item);
+  $("aForm").reset(); aDoiLoai(); taoBoLoc(); veCho(); veTrangChu(); ve();
+  $("aTomTat").textContent = "Đã thêm “" + tieuDe + "”. Nhớ bấm Tải bản cập nhật!";
+});
+
+$("qForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const ops = ["qA", "qB", "qC", "qD"].map(id => $(id).value.trim());
+  if (ops.some(x => !x)) { $("qMsg").textContent = "Hãy điền đủ 4 đáp án A, B, C, D."; return; }
+  cauHoi.push({
+    lop: Number($("qLop").value), chuDe: $("qCD").value.trim(), cauHoi: $("qText").value.trim(),
+    dapAn: ops, dung: Number($("qDung").value), giaiThich: $("qGT").value.trim()
+  });
+  $("qForm").reset(); $("qMsg").textContent = "";
+  taoBoLoc(); veTrangChu(); ve();
+  $("aTomTat").textContent = "Đã thêm câu hỏi. Nhớ bấm Tải bản cập nhật!";
+});
+
+function taiFile(blob, name) {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob); a.download = name;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+}
+$("aTai").onclick = async () => {
+  const json = JSON.stringify(docs, null, 2).replace(/</g, "\\u003c");
+  const thay = (h, id, data) => h.replace(
+    new RegExp('(<script id="' + id + '" type="application/json">)[\\s\\S]*?(</scr' + 'ipt>)'),
+    (m, a, b) => a + "\n" + JSON.stringify(data, null, 2).replace(/</g, "\\u003c") + "\n" + b);
+  const html = thay(thay(NGUON, "du-lieu", docs), "cau-hoi", cauHoi);
+  taiFile(new Blob([html], {type: "text/html"}), "index.html");
+  for (const p of pending) {
+    await new Promise(r => setTimeout(r, 600));
+    taiFile(p.file, p.path.split("/").pop());
+  }
+  $("aTomTat").textContent = "Đã tải xong. Nếu trình duyệt hỏi cho phép tải nhiều file, hãy chọn Cho phép.";
+};
+
+function capNhatAdmin() {
+  $("adminBox").hidden = !laAdmin();
+  aDoiLoai(); ve();
+}
+window.addEventListener("hashchange", () => { if (location.hash === "#admin") adminBat = true; capNhatAdmin(); });
+
+/* ===== Nội dung trang chính thức ===== */
+// Sửa thông tin của bạn ở đây
+const CAU_HINH = {
+  email: "lienhe@example.com",   // đổi thành email của bạn
+  facebook: "",                  // dán link Facebook nếu có (https://...)
+  zalo: "",                      // số Zalo nếu có
+  gioiThieu: "Xin chào! Mình là người soạn tài liệu và đề thi trên trang này. Mình tập hợp các bài ôn tập Toán THCS (lớp 6, 7, 8, 9) để giúp các bạn học sinh hiểu bài chắc hơn và ôn thi hiệu quả hơn."
+};
+
+const GOI_Y_LOP = {
+  6: "Số tự nhiên, phân số, số nguyên, hình học cơ bản",
+  7: "Số hữu tỉ, tỉ lệ thức, biểu thức đại số, tam giác",
+  8: "Đa thức, hằng đẳng thức, phân thức, tam giác đồng dạng",
+  9: "Căn bậc hai, hệ phương trình, hàm số, hệ thức lượng"
+};
+
+function veTrangChu() {
+  const tl = docs.filter(d => loaiCua(d) === "tai-lieu").length;
+  $("stTL").textContent = tl;
+  $("stDT").textContent = docs.length - tl;
+  $("stCH").textContent = cauHoi.length;
+
+  $("gtText").textContent = CAU_HINH.gioiThieu;
+  const lh = [];
+  if (CAU_HINH.email) lh.push(`📧 <a href="mailto:${esc(CAU_HINH.email)}">${esc(CAU_HINH.email)}</a>`);
+  if (CAU_HINH.facebook) lh.push(`📘 <a href="${esc(safeUrl(CAU_HINH.facebook))}" target="_blank" rel="noopener">Facebook</a>`);
+  if (CAU_HINH.zalo) lh.push(`💬 Zalo: ${esc(CAU_HINH.zalo)}`);
+  $("lhInfo").innerHTML = lh.map(x => "<p>" + x + "</p>").join("") || "<p>Chưa có thông tin liên hệ.</p>";
+  $("ftLienHe").innerHTML = lh.map(x => "<p>" + x.replace(/<a /g, '<a style="display:inline" ') + "</p>").join("");
+  $("copyNam").textContent = "© " + new Date().getFullYear() + " Toán THCS";
+  veMoi(); veThuThach();
+}
+
+$("lhForm").addEventListener("submit", e => {
+  e.preventDefault();
+  if (!CAU_HINH.email) return;
+  const ten = $("lhTen").value.trim(), em = $("lhEmail").value.trim();
+  const tieuDe = encodeURIComponent("[Toán THCS] Góp ý từ " + ten);
+  const noiDung = encodeURIComponent($("lhND").value.trim() + "\n\n— " + ten + " (" + em + ")");
+  location.href = "mailto:" + CAU_HINH.email + "?subject=" + tieuDe + "&body=" + noiDung;
+});
+
+/* ===== Công thức cần nhớ ===== */
+const CONG_THUC = {
+  6: [
+    {cd: "Số học", ds: [
+      ["Phân số bằng nhau", "a/b = c/d ⇔ a · d = b · c"],
+      ["Tính chất cơ bản của phân số", "a/b = (a · m)/(b · m) = (a : n)/(b : n)\n(m ≠ 0; n là ước chung của a và b)"],
+      ["Cộng hai phân số cùng mẫu", "a/m + b/m = (a + b)/m"],
+      ["Nhân hai phân số", "a/b · c/d = (a · c)/(b · d)"],
+      ["Chia hai phân số", "a/b : c/d = (a · d)/(b · c)"],
+      ["ƯCLN và BCNN", "ƯCLN(a, b) · BCNN(a, b) = a · b"],
+      ["Quy tắc dấu ngoặc", "−(a − b + c) = −a + b − c"]
+    ]},
+    {cd: "Hình học", ds: [
+      ["Hình chữ nhật", "P = 2(a + b)\nS = a · b"],
+      ["Hình vuông", "P = 4a\nS = a²"],
+      ["Hình bình hành", "S = a · h\n(a: cạnh đáy, h: chiều cao)"],
+      ["Hình thoi", "S = (m · n)/2\n(m, n: hai đường chéo)"]
+    ]}
+  ],
+  7: [
+    {cd: "Đại số", ds: [
+      ["Tỉ lệ thức", "a/b = c/d ⇔ a · d = b · c"],
+      ["Dãy tỉ số bằng nhau", "a/b = c/d = (a + c)/(b + d) = (a − c)/(b − d)"],
+      ["Đại lượng tỉ lệ thuận", "y = k · x   (k ≠ 0)"],
+      ["Đại lượng tỉ lệ nghịch", "y = a/x   hay   x · y = a"],
+      ["Nhân, chia lũy thừa cùng cơ số", "xᵐ · xⁿ = x^(m+n)\nxᵐ : xⁿ = x^(m−n)"],
+      ["Lũy thừa của lũy thừa", "(xᵐ)ⁿ = x^(m·n)"],
+      ["Giá trị tuyệt đối", "|x| = x   nếu x ≥ 0\n|x| = −x  nếu x < 0"]
+    ]},
+    {cd: "Hình học", ds: [
+      ["Tổng ba góc của tam giác", "∠A + ∠B + ∠C = 180°"],
+      ["Góc ngoài của tam giác", "Bằng tổng hai góc trong không kề với nó"],
+      ["Tam giác cân", "Hai cạnh bên bằng nhau\nHai góc ở đáy bằng nhau"],
+      ["Bất đẳng thức tam giác", "|AB − AC| < BC < AB + AC"]
+    ]}
+  ],
+  8: [
+    {cd: "Đại số", ds: [
+      ["Bình phương của một tổng", "(A + B)² = A² + 2AB + B²"],
+      ["Bình phương của một hiệu", "(A − B)² = A² − 2AB + B²"],
+      ["Hiệu hai bình phương", "A² − B² = (A − B)(A + B)"],
+      ["Lập phương của một tổng", "(A + B)³ = A³ + 3A²B + 3AB² + B³"],
+      ["Lập phương của một hiệu", "(A − B)³ = A³ − 3A²B + 3AB² − B³"],
+      ["Tổng hai lập phương", "A³ + B³ = (A + B)(A² − AB + B²)"],
+      ["Hiệu hai lập phương", "A³ − B³ = (A − B)(A² + AB + B²)"],
+      ["Phương trình bậc nhất", "ax + b = 0 (a ≠ 0)  ⇒  x = −b/a"],
+      ["Hai phân thức bằng nhau", "A/B = C/D ⇔ A · D = B · C"]
+    ]},
+    {cd: "Hình học", ds: [
+      ["Định lí Thalès", "DE // BC ⇒ AD/DB = AE/EC\nvà AD/AB = AE/AC"],
+      ["Tam giác đồng dạng (tỉ số k)", "Tỉ số chu vi = k\nTỉ số diện tích = k²"],
+      ["Đường trung bình của tam giác", "MN // BC và MN = BC/2"],
+      ["Diện tích hình thang", "S = (a + b) · h / 2"],
+      ["Diện tích tam giác", "S = a · h / 2"]
+    ]}
+  ],
+  9: [
+    {cd: "Đại số", ds: [
+      ["Căn thức bậc hai", "√(A²) = |A|\n√(A · B) = √A · √B   (A, B ≥ 0)\n√(A/B) = √A/√B   (A ≥ 0, B > 0)"],
+      ["Phương trình bậc hai", "ax² + bx + c = 0 (a ≠ 0)\nΔ = b² − 4ac"],
+      ["Nghiệm phương trình bậc hai", "Δ > 0: x₁,₂ = (−b ± √Δ)/(2a)\nΔ = 0: x = −b/(2a)\nΔ < 0: vô nghiệm"],
+      ["Hệ thức Vi-ét", "x₁ + x₂ = −b/a\nx₁ · x₂ = c/a"],
+      ["Hàm số bậc nhất", "y = ax + b\na > 0: đồng biến; a < 0: nghịch biến"]
+    ]},
+    {cd: "Hình học", ds: [
+      ["Hệ thức lượng trong tam giác vuông\n(vuông tại A, đường cao AH)", "AB² = BH · BC\nAC² = CH · BC\nAH² = BH · CH\nAB · AC = AH · BC\n1/AH² = 1/AB² + 1/AC²\nBC² = AB² + AC²"],
+      ["Tỉ số lượng giác của góc nhọn α", "sin α = đối/huyền\ncos α = kề/huyền\ntan α = đối/kề\ncot α = kề/đối"],
+      ["Giá trị lượng giác đặc biệt", "sin 30° = cos 60° = 1/2\nsin 45° = cos 45° = √2/2\nsin 60° = cos 30° = √3/2\ntan 45° = 1"],
+      ["Đường tròn", "C = 2πR\nS = πR²"],
+      ["Góc với đường tròn", "Góc ở tâm = số đo cung bị chắn\nGóc nội tiếp = ½ số đo cung bị chắn"]
+    ]}
+  ]
+};
+let ctLop = 6;
+function veCongThuc() {
+  const tabs = $("ctTabs"); tabs.innerHTML = "";
+  [6, 7, 8, 9].forEach(l => {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "ltab l" + l + (ctLop === l ? " active" : ""); b.setAttribute("aria-pressed", String(ctLop === l));
+    b.textContent = "Lớp " + l;
+    b.onclick = () => { ctLop = l; veCongThuc(); };
+    tabs.appendChild(b);
+  });
+  $("ctBody").style.setProperty("--c", "var(--l" + ctLop + ")");
+  $("ctBody").innerHTML = (CONG_THUC[ctLop] || []).map(g =>
+    `<div class="ct-h">${esc(g.cd)}</div><div class="ct-grid">${g.ds.map(([ten, ct]) =>
+      `<div class="ct"><small>${esc(ten).replace(/\n/g, "<br>")}</small><code>${esc(ct)}</code></div>`).join("")}</div>`).join("");
+}
+
+/* ===== Trợ giúp truy cập ===== */
+function thongBao(msg) { const el = $("sr"); el.textContent = ""; setTimeout(() => { el.textContent = msg; }, 60); }
+function focusCau() { const q = document.querySelector("#luyenTap .lt-q"); if (q) q.focus(); }
+$("overlay").addEventListener("keydown", e => {   // nhốt phím Tab trong hộp đăng nhập
+  if (e.key !== "Tab") return;
+  const f = [...$("overlay").querySelectorAll("button, input, select, textarea, a[href]")].filter(x => !x.disabled && x.offsetParent !== null);
+  if (!f.length) return;
+  const a = f[0], z = f[f.length - 1];
+  if (e.shiftKey && document.activeElement === a) { e.preventDefault(); z.focus(); }
+  else if (!e.shiftKey && document.activeElement === z) { e.preventDefault(); a.focus(); }
+});
+
+/* ===== Giao diện sáng / tối ===== */
+const themeHienTai = () => document.documentElement.getAttribute("data-theme") ||
+  (window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+function ganTheme(t) {
+  document.documentElement.setAttribute("data-theme", t);
+  try { localStorage.setItem("toan_theme", t); } catch (e) {}
+  $("themeBtn").textContent = t === "dark" ? "☀️" : "🌙";
+}
+$("themeBtn").onclick = () => ganTheme(themeHienTai() === "dark" ? "light" : "dark");
+$("themeBtn").textContent = themeHienTai() === "dark" ? "☀️" : "🌙";
+
+/* ===== Làm mới toàn trang (sau đăng nhập / đăng xuất) ===== */
+function lamMoiTatCa() { veAuthBar(); taoBoLoc(); veMoi(); veThuThach(); ve(); }
+
+/* ===== Khu quản lý: nhập nhiều câu hỏi cùng lúc ===== */
+$("qBulkBtn").onclick = () => {
+  const lines = $("qBulk").value.split("\n").map(s => s.trim()).filter(Boolean);
+  let ok = 0; const loi = [];
+  lines.forEach((ln, idx) => {
+    const p = ln.split("|").map(s => s.trim());
+    const lop = Number(p[0]), dung = "ABCD".indexOf((p[7] || "").toUpperCase());
+    if (p.length < 8 || ![6, 7, 8, 9].includes(lop) || !p[1] || !p[2] || p.slice(3, 7).some(x => !x) || dung < 0 || p[7].length !== 1) { loi.push(idx + 1); return; }
+    cauHoi.push({lop, chuDe: p[1], cauHoi: p[2], dapAn: p.slice(3, 7), dung, giaiThich: p.slice(8).join(" | ")});
+    ok++;
+  });
+  $("qBulkMsg").textContent = "Đã thêm " + ok + " câu" + (loi.length ? ". Dòng bị lỗi (giữ lại trong ô để sửa): " + loi.join(", ") : ".");
+  if (ok) {
+    $("qBulk").value = lines.filter((_, i) => loi.includes(i + 1)).join("\n");
+    taoBoLoc(); veTrangChu(); ve();
+    $("aTomTat").textContent = "Đã thêm câu hỏi. Nhớ bấm Tải bản cập nhật!";
+  }
+};
+
+// Menu điện thoại, nút chọn mục, nút lên đầu trang
+$("menuBtn").onclick = () => { const m = $("nav").classList.toggle("open"); $("menuBtn").setAttribute("aria-expanded", String(m)); };
+$("nav").addEventListener("click", e => { if (e.target.tagName === "A") { $("nav").classList.remove("open"); $("menuBtn").setAttribute("aria-expanded", "false"); } });
+document.querySelectorAll("[data-muc]").forEach(a => a.addEventListener("click", () => doiMuc(a.dataset.muc)));
+window.addEventListener("scroll", () => { $("topBtn").hidden = window.scrollY < 500; }, {passive: true});
+$("topBtn").onclick = () => window.scrollTo({top: 0, behavior: "smooth"});
+
+veAuthBar();
+taoBoLoc();
+veTrangChu();
+veCongThuc();
+capNhatAdmin();
+</script>
+</body>
+</html>
